@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>ENGNE</title>
+	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+	<div id="page">
+		<div id="header" class="padd">
+			<div class="logo centerized"><a href=".">EngnE</a></div>
+		</div>
+		<div id="main" class="padd cf">
+			<%= yield %>
+		</div>
+		<div id="footer" class="padd">
+			<div id="left-footer-bar" class="footer-bar padd"> stuffing </div>
+			<div id="center-right-footer-bar">
+				<div id="center-footer-bar" class="footer-bar padd"> stuffing </div>
+				<div id="right-footer-bar"  class="footer-bar padd"> stuffing </div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+
+			<div id="gallery">
+				<ul class="sidelisting">
+					<li class="taken"><a href="round1.php"><img src="projects/1/1.png"/>
+						<ul class="blue padd">
+							<li>The Metalwork Adventures</li>
+							<li>Admas Molla</li>
+							<li>Metalworking</li>
+							<li id="raised-1"></li>
+						</ul>
+						</a>
+					</li>
+					<li class="taken"><a href="round2.php"><img src="projects/1/2.png"/>
+						<ul class="blue padd">
+							<li>The Cubist</li>
+							<li>Admas Molla</li>
+							<li>Metalworking</li>
+							<li id="raised-2"></li>
+						</ul>
+						</a>
+					</li>
+					<li class="blank"></li>
+					<li class="blank"></li>
+					<li class="blank"></li>
+					<li class="blank"></li>
+					<li class="blank"></li>
+					<li class="blank"></li>
+				</ul>
+			</div>
+
+
+			
+			<div id="selector">
+				<div class="bigBlue"><%= link_to 'Create a new project?', new_project_path %></div>
+				<div class="categories padd">Categories:
+					<ul class="catlist padd">
+						<% @categories.each do |category| %>
+						<li><%= link_to category.title, category %></li>
+						<% end %>
+					</ul>
+				</div>
+			</div>

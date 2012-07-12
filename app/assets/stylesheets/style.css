@@ -1,0 +1,306 @@
+body{
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	background: #e2e2e2;
+	padding: 0 2em;
+	display: block;
+	margin: 0;
+	outline: 0;
+	vertical-align: baseline;
+	color:black;
+}
+
+a{
+	text-decoration: none;
+	color:rgb(162, 90, 0);
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	outline: 0;
+}
+
+form{
+	width: 80%;
+}
+
+.padd{
+	padding: 15px;
+}
+
+.centerized{
+	margin: 0 auto;
+}
+
+.blue{
+	color: white;
+	background: rgb(0, 90, 162);
+}
+
+#page{
+	width: 1125px;
+	background: rgba(216, 215, 215, 0.55);
+	margin: 2em auto;
+}
+
+#header{
+	height: 100px;
+	background: #e8e8e8;
+}
+
+#header .logo{
+	font-variant: small-caps;
+	font-size: 3em;
+	text-align: center;
+	color: rgb(90, 162, 0);
+}
+
+#main{
+}
+
+#footer{
+	border-top: 2px solid rgb(162, 90, 0);
+	background: #e8e8e8;
+	min-height: 150px;
+}
+
+.cf:after {
+	display:block;
+	clear:both;
+	height:0;
+	visibility:hidden;
+	content:" ";
+	font-size:0;
+}
+
+#left-footer-bar {
+	float: left;
+}
+
+#center-right-footer-bar{
+	float:right;
+}
+
+#center-footer-bar{
+	float:left;
+}
+
+#right-footer-bar{
+	float: right;
+}
+
+.footer-bar {
+	border-left: 20px solid #E8E8E8;
+	border-right: 20px solid #E8E8E8;
+	background: gray;
+	width: 295px;
+/* 	padding-left: 20px; */
+/* 	padding-right: 20px; */
+	min-height: 10px;
+}
+/* -------------- -------------- -------------- -------------- -------------- -------------- -------------- -------------- */
+/* -------------- -------------- -------------- -----index---- -------------- -------------- -------------- -------------- */
+/* -------------- -------------- -------------- -------------- -------------- -------------- -------------- -------------- */
+
+#gallery{
+	float: left;
+	width: 80%;
+}
+
+gallery ul.sidelisting{
+}
+
+#gallery ul.sidelisting li.blank{
+	float: left;
+	height: 185px;
+	width: 185px;
+	background: url('slash.svg');
+	margin: 5px;
+	padding: 5px;
+}
+
+#gallery ul.sidelisting li.blank:hover{
+	background: #f1f1f1;
+}
+
+#gallery li.taken{
+	float: left;
+	height: 185px;
+	width: 185px;
+	margin: 5px;
+	padding: 5px;
+}
+
+#gallery .taken a img{
+	width: 185px;
+	height: 185px;
+	opacity: 0.5;
+}
+
+#gallery .taken a img:hover{
+	opacity: 1;
+}
+
+#gallery .sidelisting li.taken a{
+	background:none;
+}
+
+#gallery .sidelisting li.taken:hover a{
+	background: white;
+}
+
+#gallery .sidelisting li.taken a ul{
+	display: none;
+	position: relative;
+	bottom:185px;
+	
+}
+
+#gallery .sidelisting li.taken:hover a ul{
+	display: block;
+}
+
+#selector{
+	float: right;
+	width: 20%;
+}
+
+
+.bigBlue {
+	padding:20px;
+	margin: 5px;
+	background: rgb(0, 90, 162);
+	margin-bottom: 30px;
+	min-width: 170px;
+	text-align: center;
+	color: white;
+}
+
+.bigBlue a{
+	color: white;
+}
+
+#selector .categories{
+	border-top: 2px solid rgb(162, 90, 0);
+}
+
+.catlist{
+	max-height: 237px;
+	overflow-y: auto;
+	padding-top: 5px;
+}
+
+.catlist li{
+	padding:3px;	
+}
+
+
+/* -------------- -------------- -------------- -------------- -------------- -------------- -------------- -------------- */
+/* -------------- -------------- -------------- ----create---- -------------- -------------- -------------- -------------- */
+/* -------------- -------------- -------------- -------------- -------------- -------------- -------------- -------------- */
+
+
+/* -------------- -------------- -------------- -------------- -------------- -------------- -------------- -------------- */
+/* -------------- -------------- -------------- ----ind--- -------------- -------------- -------------- -------------- */
+/* -------------- -------------- -------------- -------------- -------------- -------------- -------------- -------------- */
+#projTitle{
+	font-variant: small-caps;
+	font-size: 2.5em;
+	text-align: center;
+	
+}
+
+#top{
+	border-bottom: 2px solid rgb(162, 90, 0);
+}
+
+#video{
+	float: left;
+	width: 775px;
+	height:480px;
+}
+
+#bio{
+	float:right;
+	height:480px;
+	width: 240px;
+	overflow-y: auto;
+}
+
+#bio #picture{
+	width:200px;
+	height: 200px;
+}
+
+#projectImgs{
+	min-height: 400px;
+	background: gray;
+}
+
+#projectImgs #rightarr{
+	float: right;
+	height: 400px;
+	width:100px;
+	background: right url('arr.svg');
+}
+
+#projectImgs #leftarr{
+	float: left;
+	height: 400px;
+	width:100px;
+	background: right url('arr.svg');
+	-webkit-transform: rotate(180deg);
+}
+
+#projectImgs #rightarr:hover{
+	cursor: pointer;
+	background: url('arr.svg');
+}
+
+#projectImgs #leftarr:hover{
+	cursor: pointer;
+	-webkit-transform: rotate(180deg);
+	background: url('arr.svg');
+}
+
+#projectImgs #image{
+	float: left;
+	max-width: 740px;
+	max-height: 400px;
+	margin: 0 auto;
+}
+
+#projectImgs #image img{
+	max-height: inherit;
+}
+
+#financials{
+	border-bottom: 1px solid rgb(162, 90, 0);
+/* 	width: 75%; */
+	margin: 0 auto;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.32);
+}
+
+#financials table{
+	min-width: 600px;
+}
+
+#preturn{
+	margin-bottom: 10px;
+	text-indent: 50px;
+	margin-left:33%;
+	font-size: 2.5em;
+	width: 45px;
+	height: 50px;
+	background: url('savetake.svg');
+}
+
+.daysremaining{
+font-size: 1.5em;
+}
