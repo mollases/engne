@@ -11,6 +11,17 @@
 	<div id="page">
 		<div id="header" class="padd">
 			<div class="logo centerized"><a href=".">EngnE</a></div>
+				<% if current_user%>
+		Logged in as <%= current_user.email%>.
+		<%= link_to "Log out", log_out_path %>
+	<% else %>
+		<%= link_to "Sign up", sign_up_path %> or
+		<%= link_to "log in", log_in_path %>
+	<% end %>
+
+<% flash.each do |name, msg| %>
+<%= content_tag :div, msg, :id => "flash_#{name}"%>
+<% end %>
 		</div>
 		<div id="main" class="padd cf">
 			<%= yield %>
