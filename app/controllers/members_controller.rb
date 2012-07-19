@@ -6,6 +6,7 @@ class MembersController < ApplicationController
     @member = Member.new(params[:member])
     if @member.save
       redirect_to root_url, :notice => "Signed up!"
+      session[:member_id] = @member.id
     else
       render "new"
     end
