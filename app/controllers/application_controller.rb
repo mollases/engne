@@ -5,5 +5,5 @@ end
 
 private
 def current_user
-	@current_user ||=Member.find(session[:user_id]) if session[:user_id]
+	@current_user ||=Member.find(session[:member_id]) if session[:member_id]
 end
