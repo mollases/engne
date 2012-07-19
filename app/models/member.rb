@@ -1,10 +1,9 @@
 class Member < ActiveRecord::Base
   attr_accessor :password, :password_digest
   before_save :encrypt_password
-
   has_many :projects, dependent: :destroy
 
-validates_confirmation_of :password
+  validates_confirmation_of :password
 	validates_confirmation_of :password, :on => :create, :message => "Can't be blank"
 	validates_presence_of :email, :first_name, :last_name, :password
 	validates_uniqueness_of :email

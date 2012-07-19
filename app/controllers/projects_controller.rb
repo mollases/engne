@@ -25,7 +25,6 @@ class ProjectsController < ApplicationController
   # GET /projects/new.json
   def new
     @project = Project.new
-    @categories = Category.all
 
     respond_to do |format|
       format.html # new.html.erb

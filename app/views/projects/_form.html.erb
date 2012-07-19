@@ -35,6 +35,12 @@
     <%= f.label :percent_return %><br />
     <%= f.text_field :percent_return %>
   </div>
+
+  <div class="field">
+    <%= f.label :category_id %><br />
+    <%= f.select( :category_id, Category.all.collect {|p| [ p.title, p.id ] }, {:include_blank => 'None'}) %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
