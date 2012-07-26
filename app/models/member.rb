@@ -1,5 +1,5 @@
 class Member < ActiveRecord::Base
-  attr_accessor :password, :password_digest
+  attr_accessor :password
   before_save :encrypt_password
   has_many :projects, dependent: :destroy
 
