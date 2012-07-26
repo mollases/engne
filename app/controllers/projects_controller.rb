@@ -24,7 +24,7 @@ class ProjectsController < ApplicationController
   # GET /projects/new
   # GET /projects/new.json
   def new
-    @project = Project.new
+    @project = Project.new 
 
     respond_to do |format|
       format.html # new.html.erb

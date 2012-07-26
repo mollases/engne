@@ -11,6 +11,12 @@
     </div>
   <% end %>
 
+  <% if current_user %>
+  <div class="field">
+    <%= hidden_field_tag 'project[member_id]' %>
+  </div>
+  <% end %>
+
   <div class="field">
     <%= f.label :title %><br />
     <%= f.text_field :title %>
@@ -40,13 +46,6 @@
     <%= f.label :category_id %><br />
     <%= f.select( :category_id, Category.all.collect {|p| [ p.title, p.id ] }) %>
   </div>
-
-  <% if current_user %>
-  <div class="field">
-    <%= f.label :member_id %><br/>
-    <%= f.hidden_field :member_id %>
-  </div>
-  <% end %>
 
   <div class="actions">
     <%= f.submit %>
