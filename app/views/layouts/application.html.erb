@@ -10,7 +10,7 @@
 	<body>
 	<div id="page">
 		<div id="header" class="padd">
-			<div class="logo centerized"><a href=".">EngnE</a></div>
+			<div class="logo centerized"><%= link_to "EngnE", index_path %></div>
 				<% if current_user %>
 		Logged in as <%= current_user.email%>. <br/>
 		<%= link_to "Log out", log_out_path %>
