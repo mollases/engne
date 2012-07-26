@@ -47,62 +47,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/controllers/sessions_controller.rb",
-			"settings":
-			{
-				"buffer_size": 434,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/routes.rb",
-			"settings":
-			{
-				"buffer_size": 322,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/sessions/new.html.erb",
-			"settings":
-			{
-				"buffer_size": 264,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/categories_controller.rb",
-			"settings":
-			{
-				"buffer_size": 2148,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/projects/_form.html.erb",
-			"settings":
-			{
-				"buffer_size": 1114,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/layouts/application.html.erb",
-			"settings":
-			{
-				"buffer_size": 1116,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "engne.sublime-project",
-			"settings":
-			{
-				"buffer_size": 73,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
@@ -128,25 +72,31 @@
 	},
 	"file_history":
 	[
-		"/Users/mollases/Desktop/engne/app/controllers/members_controller.rb",
-		"/Users/mollases/Desktop/engne/app/models/project.rb",
-		"/Users/mollases/Desktop/engne/app/controllers/application_controller.rb",
-		"/Users/mollases/Desktop/engne/engne.sublime-workspace",
-		"/Users/mollases/Desktop/engne/db/schema.rb",
-		"/Users/mollases/Desktop/engne/app/controllers/projects_controller.rb",
+		"/Users/mollases/Desktop/worldDomination/wd.sublime-project",
+		"/Users/mollases/Desktop/engne/app/controllers/sessions_controller.rb",
 		"/Users/mollases/Desktop/engne/app/views/projects/_form.html.erb",
+		"/Users/mollases/Desktop/worldDomination/top.php",
+		"/Users/mollases/Desktop/worldDomination/index.html",
+		"/Users/mollases/Desktop/engne/app/controllers/projects_controller.rb",
+		"/Users/mollases/Desktop/worldDomination/css/style.css",
+		"/Users/mollases/Desktop/worldDomination/index.php",
+		"/Users/mollases/Desktop/engne/app/controllers/members_controller.rb",
+		"/Users/mollases/Desktop/engne/app/views/layouts/application.html.erb",
+		"/Users/mollases/Desktop/engne/app/controllers/application_controller.rb",
+		"/Users/mollases/Desktop/worldDomination/character.js",
+		"/Users/mollases/Desktop/engne/app/models/member.rb",
+		"/Users/mollases/Desktop/engne/db/schema.rb",
+		"/Users/mollases/Desktop/engne/app/controllers/categories_controller.rb",
+		"/Users/mollases/Desktop/engne/app/views/sessions/new.html.erb",
+		"/Users/mollases/Desktop/engne/config/routes.rb",
+		"/Users/mollases/Desktop/engne/engne.sublime-project",
+		"/Users/mollases/Desktop/engne/app/models/project.rb",
+		"/Users/mollases/Desktop/engne/engne.sublime-workspace",
 		"/Users/mollases/Desktop/engne/db/seeds.rb",
 		"/Users/mollases/Desktop/engne/app/views/home/index.html.erb",
 		"/Users/mollases/Desktop/engne/app/controllers/home_controller.rb",
 		"/Users/mollases/Desktop/engne/app/models/category.rb",
-		"/Users/mollases/Desktop/engne/app/models/member.rb",
-		"/Users/mollases/Desktop/engne/app/views/layouts/application.html.erb",
-		"/Users/mollases/Desktop/engne/app/controllers/sessions_controller.rb",
 		"/Users/mollases/Downloads/worldDomination/css/style.css",
-		"/Users/mollases/Desktop/worldDomination/character.js",
-		"/Users/mollases/Desktop/worldDomination/index.html",
-		"/Users/mollases/Desktop/worldDomination/css/style.css",
-		"/Users/mollases/Desktop/worldDomination/index.php",
 		"/Users/mollases/Desktop/World Domination_files/character.js",
 		"/Users/mollases/Desktop/World Domination.html",
 		"/Users/mollases/Desktop/engne/Gemfile.lock",
@@ -163,12 +113,10 @@
 		"/Users/mollases/Desktop/engne/app/views/categories/show.html.erb",
 		"/Users/mollases/Desktop/engne/app/views/categories/_form.html.erb",
 		"/Users/mollases/Desktop/engne/app/views/categories/jewerly.html.erb",
-		"/Users/mollases/Desktop/engne/app/controllers/categories_controller.rb",
 		"/Users/mollases/Downloads/engne#1/index.php",
 		"/Users/mollases/Desktop/engne/db/migrate/20120702212255_create_categories.rb",
 		"/Users/mollases/Desktop/engne/config/database.yml",
 		"/Users/mollases/Desktop/depot/app/models/cart.rb",
-		"/Users/mollases/Desktop/engne/config/routes.rb",
 		"/Users/mollases/Desktop/deopt_rails32/depot_u/Gemfile",
 		"/Users/mollases/Desktop/engne/db/migrate/20120702202600_categories.rb",
 		"/Users/mollases/Desktop/deopt_rails32/depot_u/lib/tasks/db_backup.rake",
@@ -265,198 +213,8 @@
 	"groups":
 	[
 		{
-			"selected": 6,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/controllers/sessions_controller.rb",
-					"settings":
-					{
-						"buffer_size": 434,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								172,
-								181
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "config/routes.rb",
-					"settings":
-					{
-						"buffer_size": 322,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								270,
-								270
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views/sessions/new.html.erb",
-					"settings":
-					{
-						"buffer_size": 264,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/controllers/categories_controller.rb",
-					"settings":
-					{
-						"buffer_size": 2148,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/views/projects/_form.html.erb",
-					"settings":
-					{
-						"buffer_size": 1114,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1036,
-								1036
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/views/layouts/application.html.erb",
-					"settings":
-					{
-						"buffer_size": 1116,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								432,
-								432
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "engne.sublime-project",
-					"settings":
-					{
-						"buffer_size": 73,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								63,
-								63
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
