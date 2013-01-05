@@ -6,6 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Category.create([{title: 'Jewerly'}, {title: 'Music CD'},{title: 'Performance'},{title: 'Ceramic Work'}])
-Members.create([{first_name: 'Admas'}, {last_name: 'Molla'}, {password_digest: ''}, {email: ''}])
-Members.create([{first_name: 'Harvey'}, {last_name: 'Halaharvey'}, {password_digest: ''}, {email: ''}])
+Category.create([{title: 'Jewerly'},{title: 'Ceramic Work'}])
+#Members.create([{first_name: 'Admas'}, {last_name: 'Molla'}, {password_digest: ''}, {email: ''}])
+#Members.create([{first_name: 'Harvey'}, {last_name: 'Halaharvey'}, {password_digest: ''}, {email: ''}])
