@@ -131,8 +131,8 @@ gallery ul.sidelisting{
 
 #gallery ul.sidelisting li.blank{
 	float: left;
-	height: 185px;
-	width: 185px;
+	height: 250px;
+	width: 250px;
 	background: url('slash.svg');
 	margin: 5px;
 	padding: 5px;
@@ -144,15 +144,15 @@ gallery ul.sidelisting{
 
 #gallery li.taken{
 	float: left;
-	height: 185px;
-	width: 185px;
+	height: 250px;
+	width: 250px;
 	margin: 5px;
 	padding: 5px;
 }
 
 #gallery .taken a img{
-	width: 185px;
-	height: 185px;
+	width: 250px;
+	height: 250px;
 	opacity: 0.5;
 }
 

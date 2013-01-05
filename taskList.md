@@ -8,3 +8,4 @@
 -populate each catagory with associated projects --DONE HH
 -spike: figure out pictures and video
 -figure out markdown
+- device (2.1.2)? are we using this?
