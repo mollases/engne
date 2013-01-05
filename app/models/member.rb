@@ -3,8 +3,8 @@ class Member < ActiveRecord::Base
   before_save :encrypt_password
   has_many :projects, dependent: :destroy
 
-  validates_confirmation_of :password
-	validates_confirmation_of :password, :on => :create, :message => "Can't be blank"
+  validates_confirmation_of :password, :on => :create, :message => "Can't be blank"
+	#validates_confirmation_of :password
 	validates_presence_of :email, :first_name, :last_name, :password
 	validates_uniqueness_of :email
   attr_accessible :email, :password, :password_confirmation, :first_name, :last_name
