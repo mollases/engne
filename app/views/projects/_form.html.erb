@@ -44,7 +44,7 @@
 
   <div class="field">
     <%= f.label :category_id %><br />
-    <%= f.select( :category_id, Category.all.collect {|p| [ p.title, p.id ] }) %>
+    <%= f.select( :category_id, Category.all {|p| [ p.title, p.id ] }) %>
   </div>
 
   <div class="actions">
