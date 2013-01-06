@@ -16,3 +16,7 @@
 
 # Ignore config files
 /config/intializers/*.rb
+
+*.sublime-workspace
+
+engne.sublime-workspace
