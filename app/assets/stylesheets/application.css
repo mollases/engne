@@ -11,8 +11,7 @@
  *= require_self
  *= require_tree .
  */
-
- body{
+body{
 	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
 	background: #e2e2e2;
 	padding: 0 2em;
@@ -25,11 +24,12 @@
 
 a{
 	text-decoration: none;
-	color:rgb(162, 90, 0);
+	color: #5BA7E4;
 }
 
 a:hover{
-	text-decoration: underline;
+	color:#E2A915;
+
 }
 
 ul{
@@ -53,18 +53,17 @@ form{
 
 .blue{
 	color: white;
-	background: rgb(0, 90, 162);
+	background: #5BA7E4;
 }
 
 #page{
-	width: 1125px;
-	background: rgba(216, 215, 215, 0.55);
+	width: 1150px;
+	/*background: rgba(216, 215, 215, 0.55); */
 	margin: 2em auto;
 }
 
 #header{
 	height: 100px;
-	background: #e8e8e8;
 }
 
 #header .logo{
@@ -126,56 +125,65 @@ form{
 	width: 80%;
 }
 
-gallery ul.sidelisting{
+#gallery ul.sidelisting{
 }
 
-#gallery ul.sidelisting li.blank{
+#gallery ul.sidelisting ul.sub{
 	float: left;
-	height: 185px;
-	width: 185px;
-	background: url('slash.svg');
+}
+
+#gallery ul.sidelisting ul.sub li.small, #gallery ul.sidelisting ul.sub li.tall{
+	width: 275px;
+	background: gray;
+	margin: 5px;
+	padding: 5px;
+	margin-bottom: 45px;
+}
+
+#gallery ul.sidelisting li.tall{
+	height: 450px;
+}
+
+#gallery ul.sidelisting li.small{
+	height: 350px;
+}
+
+#gallery ul.sidelisting li .blank{
+	height: 250px;
+	width: 250px;
+	background: black;
 	margin: 5px;
 	padding: 5px;
 }
 
-#gallery ul.sidelisting li.blank:hover{
+#gallery ul.sidelisting li .blank:hover{
 	background: #f1f1f1;
 }
 
 #gallery li.taken{
 	float: left;
-	height: 185px;
-	width: 185px;
+	height: 250px;
+	width: 250px;
 	margin: 5px;
 	padding: 5px;
 }
 
 #gallery .taken a img{
-	width: 185px;
-	height: 185px;
-	opacity: 0.5;
+	opacity: 0.75;
 }
 
-#gallery .taken a img:hover{
-	opacity: 1;
-}
-
-#gallery .sidelisting li.taken a{
+#gallery .sidelisting li .taken a{
 	background:none;
 }
 
-#gallery .sidelisting li.taken:hover a{
-	background: white;
-}
-
-#gallery .sidelisting li.taken a ul{
+#gallery .sidelisting li .taken a ul{
 	display: none;
 	position: relative;
-	bottom:185px;
+	bottom:125px;
 	
 }
 
-#gallery .sidelisting li.taken:hover a ul{
+#gallery .sidelisting li .taken:hover a ul{
 	display: block;
 }
 
@@ -188,7 +196,7 @@ gallery ul.sidelisting{
 .bigBlue {
 	padding:20px;
 	margin: 5px;
-	background: rgb(0, 90, 162);
+	background: #5BA7E4;
 	margin-bottom: 30px;
 	min-width: 170px;
 	text-align: center;
@@ -197,6 +205,9 @@ gallery ul.sidelisting{
 
 .bigBlue a{
 	color: white;
+}
+a .bigBlue:hover {
+	background:#E2A915;
 }
 
 #selector .categories{
@@ -230,7 +241,6 @@ gallery ul.sidelisting{
 }
 
 #top{
-	border-bottom: 2px solid rgb(162, 90, 0);
 }
 
 #video{
@@ -260,26 +270,26 @@ gallery ul.sidelisting{
 	float: right;
 	height: 400px;
 	width:100px;
-	background: right url('arr.svg');
+	background: right url('images/arr.svg');
 }
 
 #projectImgs #leftarr{
 	float: left;
 	height: 400px;
 	width:100px;
-	background: right url('arr.svg');
+	background: right url('images/arr.svg');
 	-webkit-transform: rotate(180deg);
 }
 
 #projectImgs #rightarr:hover{
 	cursor: pointer;
-	background: url('arr.svg');
+	background: url('images/arr.svg');
 }
 
 #projectImgs #leftarr:hover{
 	cursor: pointer;
 	-webkit-transform: rotate(180deg);
-	background: url('arr.svg');
+	background: url('images/arr.svg');
 }
 
 #projectImgs #image{
@@ -312,7 +322,7 @@ gallery ul.sidelisting{
 	font-size: 2.5em;
 	width: 45px;
 	height: 50px;
-	background: url('savetake.svg');
+	background: url('images/savetake.svg');
 }
 
 .daysremaining{
