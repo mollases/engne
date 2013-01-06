@@ -11,12 +11,12 @@
 	<div id="page">
 		<div id="header" class="padd">
 			<div class="logo centerized"><%= link_to "EngnE", index_path %></div>
-				<% if current_user %>
+				<% if current_user? %>
 		Logged in as <%= current_user.email%>. <br/>
-		<%= link_to "Log out", log_out_path %>
+		<%= link_to "Log out", destroy_member_session_path %>
 	<% else %>
-		<%= link_to "Sign up", new_session_path %> or
-		<%= link_to "log in", log_in_path %>
+		<%= link_to "Sign up", new_member_registration_path %> or
+		<%= link_to "Sign in", new_member_session_path %>
 	<% end %>
 
 <% flash.each do |name, msg| %>
