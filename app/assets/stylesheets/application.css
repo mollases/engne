@@ -120,79 +120,6 @@ form{
 /* -------------- -------------- -------------- -----index---- -------------- -------------- -------------- -------------- */
 /* -------------- -------------- -------------- -------------- -------------- -------------- -------------- -------------- */
 
-#gallery{
-	float: left;
-	width: 80%;
-}
-
-#gallery ul.sidelisting{
-}
-
-#gallery ul.sidelisting ul.sub{
-	float: left;
-}
-
-#gallery ul.sidelisting ul.sub li.small, #gallery ul.sidelisting ul.sub li.tall{
-	width: 275px;
-	background: gray;
-	margin: 5px;
-	padding: 5px;
-	margin-bottom: 45px;
-}
-
-#gallery ul.sidelisting li.tall{
-	height: 450px;
-}
-
-#gallery ul.sidelisting li.small{
-	height: 350px;
-}
-
-#gallery ul.sidelisting li .blank{
-	height: 250px;
-	width: 250px;
-	background: black;
-	margin: 5px;
-	padding: 5px;
-}
-
-#gallery ul.sidelisting li .blank:hover{
-	background: #f1f1f1;
-}
-
-#gallery li.taken{
-	float: left;
-	height: 250px;
-	width: 250px;
-	margin: 5px;
-	padding: 5px;
-}
-
-#gallery .taken a img{
-	opacity: 0.75;
-}
-
-#gallery .sidelisting li .taken a{
-	background:none;
-}
-
-#gallery .sidelisting li .taken a ul{
-	display: none;
-	position: relative;
-	bottom:125px;
-	
-}
-
-#gallery .sidelisting li .taken:hover a ul{
-	display: block;
-}
-
-#selector{
-	float: right;
-	width: 20%;
-}
-
-
 .bigBlue {
 	padding:20px;
 	margin: 5px;
@@ -210,7 +137,7 @@ a .bigBlue:hover {
 	background:#E2A915;
 }
 
-#selector .categories{
+.selector .categories{
 	border-top: 2px solid rgb(162, 90, 0);
 }
 

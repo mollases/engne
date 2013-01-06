@@ -1,0 +1,87 @@
+// Place all the styles related to the gallery here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*#gallery .taken a img{
+	opacity: 0.75;
+}
+
+#gallery .sidelisting li .taken a{
+	background:none;
+}
+
+#gallery .sidelisting li .taken a ul{
+	display: none;
+	position: relative;
+	bottom:125px;
+	
+}
+
+#gallery .sidelisting li .taken:hover a ul{
+	display: block;
+}*/
+
+
+.gallery{
+
+	ul.sidelisting{
+	width: 80%;
+
+		ul.sub{
+			float: left;
+
+			li.small,li.tall{
+				width: 275px;
+				background: gray;
+				margin: 5px;
+				padding: 5px;
+				margin-bottom: 45px;
+
+				.taken,.blank{
+					background: black;
+					height: 250px;
+					width: 250px;
+					margin: 5px;
+					padding: 5px;
+					margin-left: 7px;
+				}
+
+				.blank:hover{
+					background: #f1f1f1;
+				}
+			}
+
+			li.small{
+				height: 350px;
+			}
+
+			li.tall{
+				height: 450px;
+			}
+		}
+	}
+
+	.selector{
+		float: right;
+
+		div{
+			display: block;
+				padding-top: 15px;
+				padding-bottom:20px;
+				margin: 5px;
+				min-width: 170px;
+		
+			a.bigBlue_selector {
+				padding:15px;
+				background: #5BA7E4;
+				margin-bottom: 30px;
+				text-align: center;
+				color: white;
+
+				&:hover{
+					background:#E2A915;
+				}
+			}
+		}
+	}
+}

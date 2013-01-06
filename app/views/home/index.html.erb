@@ -1,47 +1,60 @@
 
-			<div id="gallery">
-				<ul class="sidelisting">
-					<ul class="sub">
-						<li class="tall"><div class="blank"/></li> 
-						<li class="small"><div class="blank"/></li>
-					</ul>
-					<ul class="sub">
-						<li class="small"><div class="blank"/></li>
-						<li class="tall"><div class="blank"/></li>
-					</ul>
-					<ul class="sub">
-						<li class="tall"><div class="blank"/></li>
-						<li class="small"><div class="blank"/></li>
-					</ul>
-				</ul>
+<div class="gallery">
+	<ul class="sidelisting">
+		<ul class="sub">
+			<li class="tall"><div class="blank"/></li> 
+			<li class="small"><div class="blank"/></li>
+		</ul>
+		<ul class="sub">
+			<li class="small"><div class="blank"/></li>
+			<li class="tall"><div class="blank"/></li>
+		</ul>
+		<ul class="sub">
+			<li class="tall"><div class="blank"/></li>
+			<li class="small"><div class="blank"/></li>
+		</ul>
+	</ul>
+	<div class="selector">
+		<% if !member_signed_in? %>
+		<div><%= link_to 'Sign in', new_member_session_path, :class =>'bigBlue_selector' %></div>
+		<% end %>
+		<div><%= link_to 'Create a new Project?', new_project_path, :class => 'bigBlue_selector' %></div>
+		<div class="categories padd">Categories:
+			<ul class="catlist padd">
+				<% @categories.each do |category| %>
+				<li><%= link_to category.title, category %></li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+</div>
 
-
-				<ul class="sidelisting">
-					<ul class="sub">
-						<li class="tall"><div class="blank"/></li> 
-						<li class="small"><div class="blank"/></li>
-					</ul>
-					<ul class="sub">
-						<li class="small"><div class="blank"/></li>
-						<li class="tall"><div class="blank"/></li>
-					</ul>
-					<ul class="sub">
-						<li class="tall"><div class="blank"/></li>
-						<li class="small"><div class="blank"/></li>
-					</ul>
-				</ul>
-				
-			</div>
-
-
-			
-			<div id="selector">
-				<div class="bigBlue"><%= link_to 'Create a new project?', new_project_path %></div>
-				<div class="categories padd">Categories:
-					<ul class="catlist padd">
-						<% @categories.each do |category| %>
-						<li><%= link_to category.title, category %></li>
-						<% end %>
-					</ul>
-				</div>
-			</div>
+<div class="gallery">
+	<ul class="sidelisting">
+		<ul class="sub">
+			<li class="tall"><div class="blank"/></li> 
+			<li class="small"><div class="blank"/></li>
+		</ul>
+		<ul class="sub">
+			<li class="small"><div class="blank"/></li>
+			<li class="tall"><div class="blank"/></li>
+		</ul>
+		<ul class="sub">
+			<li class="tall"><div class="blank"/></li>
+			<li class="small"><div class="blank"/></li>
+		</ul>
+	</ul>
+	<div class="selector">
+		<% if !member_signed_in? %>
+		<div><%= link_to 'Sign in', new_member_session_path, :class =>'bigBlue_selector' %></div>
+		<% end %>
+		<div><%= link_to 'Invest?', new_project_path, :class => 'bigBlue_selector' %></div>
+		<div class="categories padd">Categories:
+			<ul class="catlist padd">
+				<% @categories.each do |category| %>
+				<li><%= link_to category.title, category %></li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+</div>
