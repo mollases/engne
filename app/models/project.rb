@@ -1,7 +1,7 @@
 class Project < ActiveRecord::Base
-  attr_accessible :title, :total_investment_needed, :due_date, :return_date, :percent_return, :member_id, :category_id
+  attr_accessible :title, :estimated_investment_needed, :funds_due_date, :estimated_completion_date, :member_id, :category_id, :number_of_shares, :why_description, :how_description, :make_public, :estimated_costs
   validates :title, uniqueness: true
-  validates_presence_of :title, :total_investment_needed, :due_date, :return_date, :percent_return, :category_id, :member_id
-	belongs_to :category
+  validates_presence_of 	:title, :estimated_investment_needed, :funds_due_date, :estimated_completion_date, :member_id, :category_id, :number_of_shares, :why_description, :how_description, :make_public, :estimated_costs
+  belongs_to :category
   belongs_to :member
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130105235825) do
+ActiveRecord::Schema.define(:version => 20130108014930) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -40,15 +40,19 @@ ActiveRecord::Schema.define(:version => 20130105235825) do
 
   create_table "projects", :force => true do |t|
     t.string   "title"
-    t.datetime "created_at",              :null => false
-    t.datetime "updated_at",              :null => false
-    t.decimal  "total_investment_needed"
-    t.datetime "due_date"
-    t.datetime "return_date"
-    t.decimal  "percent_return"
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
     t.integer  "member_id"
     t.integer  "category_id"
-    t.text     "ProjectDescription"
+    t.date     "funds_due_date"
+    t.date     "estimated_completion_date"
+    t.decimal  "estimated_investment_needed"
+    t.integer  "number_of_shares"
+    t.decimal  "estimated_costs"
+    t.decimal  "current_selling_price"
+    t.text     "why_description"
+    t.text     "how_description"
+    t.binary   "make_public"
   end
 
 end

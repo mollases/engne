@@ -1,4 +1,6 @@
 class ProjectsController < ApplicationController
+  before_filter :authenticate_member!, :except => [:show]
+
   # GET /projects
   # GET /projects.json
   def index
@@ -41,6 +43,7 @@ class ProjectsController < ApplicationController
   # POST /projects.json
   def create
     @project = Project.new(params[:project])
+    params[:member_id] = 
 
     respond_to do |format|
       if @project.save

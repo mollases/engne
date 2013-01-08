@@ -11,35 +11,9 @@
     </div>
   <% end %>
 
-  <% if current_user %>
-  <div class="field">
-    <%= hidden_field_tag 'project[member_id]' %>
-  </div>
-  <% end %>
-
   <div class="field">
     <%= f.label :title %><br />
     <%= f.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= f.label :total_investment_needed %><br />
-    <%= f.text_field :total_investment_needed %>
-  </div>
-
-  <div class="field">
-    <%= f.label :due_date %><br />
-    <%= f.text_field :due_date %>
-  </div>
-
-  <div class="field">
-    <%= f.label :return_date %><br />
-    <%= f.text_field :return_date %>
-  </div>
-
-  <div class="field">
-    <%= f.label :percent_return %><br />
-    <%= f.text_field :percent_return %>
   </div>
 
   <div class="field">
@@ -47,7 +21,47 @@
     <%= f.select( :category_id, Category.all.collect {|p| [ p.title, p.id ] }) %>
   </div>
 
+  <div class="field">
+    <%= f.label :estimated_investment_needed %><br />
+    <%= f.text_field :estimated_investment_needed %>
+  </div>
+
+  <div class="field">
+    <%= f.label :estimated_costs %><br />
+    <%= f.text_field :estimated_costs %>
+  </div>
+
+  <div class="field">
+    <%= f.label :funds_due_date %><br />
+    <!--<%= f.text_field :funds_due_date %>--> datepicker needed
+  </div>
+
+  <div class="field">
+    <%= f.label :estimated_completion_date %><br />
+    <!--<%= f.text_field :estimated_completion_date %>--> datepicker needed
+  </div>
+
+  <div class="field">
+    <%= f.label :number_of_shares %><br />
+    <%= f.number_field :number_of_shares, :step => 10, :in => 0...1001 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :why_description %><br />
+    <%= f.text_area :why_description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :how_description %><br />
+    <%= f.text_area :how_description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :make_public %><br />
+    <%= f.check_box :make_public %>
+  </div>
+
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'save'%>
   </div>
 <% end %>
