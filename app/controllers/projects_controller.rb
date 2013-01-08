@@ -43,7 +43,7 @@ class ProjectsController < ApplicationController
   # POST /projects.json
   def create
     @project = Project.new(params[:project])
-    params[:member_id] = 
+    @project.member_id = current_member.id
 
     respond_to do |format|
       if @project.save
