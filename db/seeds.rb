@@ -7,5 +7,18 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Category.create([{title: 'Jewerly'},{title: 'Ceramic Work'},{title: 'Metal Working'},{title: 'Painting'}])
-#Members.create([{first_name: 'Admas'}, {last_name: 'Molla'}, {password_digest: ''}, {email: ''}])
-#Members.create([{first_name: 'Harvey'}, {last_name: 'Halaharvey'}, {password_digest: ''}, {email: ''}])
+Project.create([
+    :title       => "The Cube", 
+    :member_id   => 1, 
+    :category_id => 1, 
+    :funds_due_date               => DateTime.new(2013,1,20,8),
+    :estimated_completion_date    => DateTime.new(2013,1,21,8), 
+    :estimated_investment_needed => 100.00,
+    :estimated_costs             => 75.00,
+    :number_of_shares=> 10,
+    :why_description => "because I can",
+    :how_description => "because of you",
+    :make_public => 0
+    ])
+#member = Member.create(:email => 'molla.admas@gmail.com', :password => 'password')
+#member.save

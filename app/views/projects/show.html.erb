@@ -5,6 +5,126 @@
   <%= @project.title %>
 </p>
 
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<% @project.attributes.each do |attr_name, attr_value| %>
+  <div class="work_profile_attribute">
+    <%= attr_name %>: <%= attr_value %>
+  </div>
+<% end %>
+<div id="main" class="padd">
+			<div id="projTitle" class="centerized"><%= @project.title %> - <%= @project.category_id %></div>
+			<div id="top" class="cf padd">
+				<div id="video" class="blue"></div>
+				<div id="bio">
+					<div id="picture" class="blue"><a href="#"><img></img></a></div>
+					<div id="name" class="padd"><%= @project.member_id %></div>
+					<div><a href="#">mollases.com</a></div>
+					<div><a href="#">@mollases_</a></div>
+					<div><a href="#">facebook page</a></div>
+					<div><p>Software Engineering is my day job. My actual interest in art developed from pure competition in school against my classmates. Since those early days I have had numerous experiences in the arts. My poetry and some of my pictures have been featured in local newspapers and magazines.</p><p>More recently, I have stopped giving my name exposure in the art world. I tend to do commissioned works or private works now.</p></div>
+				</div>
+			</div>
+			<div id="projectImgs" >
+				<div id="leftarr" class="centerized"></div>
+				<div id="imageright" class="centerized">
+					<div id="image"><img src=""/></div>
+					<div id="rightarr" class="centerized"></div>
+				</div>
+			</div>
+			<div id="financials" class="padd centerized">
+				<table class="padd centerized">
+					<tr>
+						<td><div id="preturn">50%</div></td>
+						<td><a href="addvalue.php"><div id="invest" class="bigBlue">Invest</div></a></td>
+					</tr>
+					<tr>
+						<td>raised $20 of $40<div id="raised" ></div></td>
+						<td><a href="#"><div id="woalerts" class="bigBlue">Wait on alerts</div></a></td>
+					</tr>
+					<tr>
+						<td><div id="valuedAt" class="bigBlue">valued at $20</div></td>
+						<td><a href="#"><div id="donate" class="bigBlue">Donate</div></a></td>
+					</tr>
+				</table>
+				
+				<p>Days until funding ends<div class="daysremaining"> <%= Time.at @project.funds_due_date - DateTime.now %></div></p>
+			</div>
+			<div id="projectDesc" class="padd">
+				<p>Proposing ENGNE</p>
+				<p>
+					variables<br/>
+					'c' commision<br/>
+					'n' now<br/>
+					't' then<br/>
+					'f' future (after then)<br/>
+					'p' period <br/>
+					'u' updated ticker price<br/>
+				</p>
+				<p>
+					who<br/>	
+					engne<br/>
+					producer<br/>
+					consumer<br/>
+				</p>
+				<p>
+					what<br/>
+					engne allows the producer to ask for investments, the consumer to invest, and engne will take some form of 'c'<br/>
+				</p>
+				<p>
+					where<br/>
+					online<br/>
+					mobile app?<br/>
+					ipad / tablet app?<br/>
+				</p>
+				<p>
+					when<br/>
+					the producer must make the money between 'n' and 't'<br/>
+					the producer must sell product on site between 't' and 'f'<br/>
+					after 'f' has passed, producer must pay equally between consumer, themselves, and engne<br/>
+				</p>
+				<p>
+					how<br/>
+					how do you gaurentee that they have held all revenue and not some, or most?<br/>
+					based on consumer feel?<br/>
+					ebay - rating system<br/>
+				</p>
+				<p>
+					-this is set up a bit like kickstarter<br/>
+					between 'n' and 't':<br/>
+					producer pitches product (2 - 5 minute short?)<br/>
+					(cheat: consumer can invest in their own idea this way)<br/>
+					amount needed<br/>
+					how to divide it (base stock price)<br/>
+					when 't' is<br/>
+					when 'f' is<br/>
+					consumers view pitches and based on their interest, invest<br/>
+					if investment is met between 'n' and 't'<br/>
+					engne takes 'c'<br/>
+					engne charges consumers accounts<br/>
+					engne gives amount to producer<br/>
+					closes investment round<br/>
+					if investment is not met between 'n' and 't'<br/>
+					engne emails a 'we are sorry, not enough funding was available' out to consumers and producer<br/>
+					engne states (flat out) that no money was taken from any accounts<br/>
+				</p>
+				<p>
+					between 't' and 'f':<br/>
+					engne contacts producer every 'p' asking for 'u' (or create this consistent updating method)<br/>
+					based on 'u', estimate literal value of product, reflect this number to customers<br/>
+					create a trading method<br/>
+					investors can either buy or sell based on available stock (cheat: consumer can invest in their own idea this way)<br/>
+				</p>
+				<p>
+					after 'f':<br/>
+					once 'f' occurs, if profit was made<br/>
+					split profit among investors based on who currently owns what share<br/>
+				</p>
+				<p>
+					otherwise<br/>
+					engne contacts investors 'we are sorry the product bottomed up :('<br/>
+				</p>
+				<p>
+					why<br/>
+					people would like to make a profit based on a product not an entire company
+				</p>
+			</div>
+		</div>
