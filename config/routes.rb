@@ -13,8 +13,6 @@ Engne::Application.routes.draw do
 
   root :to => "home#index", :as => "index"
   
-  resources :sessions
-  
   resources :categories
 
   resources :projects
