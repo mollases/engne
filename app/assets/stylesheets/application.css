@@ -13,7 +13,7 @@
  */
 body{
 	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
-	background: #e2e2e2;
+	background: #F5F8FC;
 	padding: 0 2em;
 	display: block;
 	margin: 0;
@@ -58,7 +58,7 @@ form{
 
 #page{
 	width: 1150px;
-	/*background: rgba(216, 215, 215, 0.55); */
+	background: white;
 	margin: 2em auto;
 }
 

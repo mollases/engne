@@ -16,6 +16,7 @@
 	</ul>
 	<div class="selector">
 		<% if !member_signed_in? %>
+		<div><%= link_to 'Sign up', new_member_registration_path, :class =>'bigBlue_selector' %></div>
 		<div><%= link_to 'Sign in', new_member_session_path, :class =>'bigBlue_selector' %></div>
 		<% end %>
 		<div><%= link_to 'Create a new Project?', new_project_path, :class => 'bigBlue_selector' %></div>
@@ -46,6 +47,7 @@
 	</ul>
 	<div class="selector">
 		<% if !member_signed_in? %>
+		<div><%= link_to 'Sign up', new_member_registration_path, :class =>'bigBlue_selector' %></div>
 		<div><%= link_to 'Sign in', new_member_session_path, :class =>'bigBlue_selector' %></div>
 		<% end %>
 		<div><%= link_to 'Invest?', new_project_path, :class => 'bigBlue_selector' %></div>
