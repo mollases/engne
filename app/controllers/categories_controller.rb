@@ -80,17 +80,4 @@ class CategoriesController < ApplicationController
       format.json { head :no_content }
     end
   end
-
-  def jewerly
-  end
-
-  def music_cd
-  end
-
-  def performance
-  end
-
-  def ceramic_work
-  end
-  
 end

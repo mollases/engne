@@ -25,11 +25,10 @@ body{
 a{
 	text-decoration: none;
 	color: #5BA7E4;
-}
-
-a:hover{
-	color:#E2A915;
-
+	
+	&:hover{
+		color:#E2A915;
+	}
 }
 
 ul{
@@ -118,20 +117,16 @@ form{
 /* -------------- -------------- -------------- -------------- -------------- -------------- -------------- -------------- */
 
 .bigBlue {
-	padding:20px;
-	margin: 5px;
+	padding:15px;
 	background: #5BA7E4;
 	margin-bottom: 30px;
-	min-width: 170px;
 	text-align: center;
 	color: white;
 }
 
-.bigBlue a{
-	color: white;
-}
-a .bigBlue:hover {
+a.bigBlue:hover {
 	background:#E2A915;
+	color: white;
 }
 
 .selector .categories{
