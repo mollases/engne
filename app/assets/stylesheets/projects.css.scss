@@ -1,3 +1,97 @@
 // Place all the styles related to the projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#main{
+	#projTitle{
+	font-variant: small-caps;
+	font-size: 2.5em;
+	text-align: center;
+	}
+
+	#top{
+		#main_video{
+			float: left;
+			width: 775px;
+			height:480px;
+		}
+		#bio{
+			float:right;
+			height:480px;
+			width: 240px;
+			overflow-y: auto;
+
+			.picture{
+				background: black;
+				width:200px;
+				height: 200px;
+			}
+		}
+	}
+
+	#projectImgs{
+		min-height: 400px;
+		background: gray;
+
+		#rightarr{
+			float: right;
+			height: 400px;
+			width:100px;
+			background: right url('arr.svg');
+
+			&:hover{
+				cursor: pointer;
+				background: url('arr.svg');
+			}
+		}
+
+	  #leftarr{
+			float: left;
+			height: 400px;
+			width:100px;
+			background: right url('arr.svg');
+			-webkit-transform: rotate(180deg);
+
+			&:hover{
+				cursor: pointer;
+				-webkit-transform: rotate(180deg);
+				background: url('arr.svg');
+			}
+		}
+
+		#image_reel{
+			float: left;
+			max-width: 740px;
+			max-height: 400px;
+			margin: 0 auto;
+
+			img{
+			max-height: inherit;
+			}
+		}
+	}
+
+	#financials{
+		border-bottom: 1px solid rgb(162, 90, 0);
+		margin: 0 auto;
+		text-align: center;
+		background: rgba(255, 255, 255, 0.32);
+		
+		table{
+			min-width: 600px;
+
+			.daysremaining{
+			font-size: 1.2em;
+			}
+		}
+	}
+
+	#projectDesc{
+		width: 80%;
+
+		.response{
+			width: 90%;
+			font-size: 1.1em;
+		}
+	}
+}

@@ -73,9 +73,6 @@ form{
 	color: rgb(90, 162, 0);
 }
 
-#main{
-}
-
 #footer{
 	border-top: 2px solid rgb(162, 90, 0);
 	background: #e8e8e8;
@@ -149,109 +146,4 @@ a .bigBlue:hover {
 
 .catlist li{
 	padding:3px;	
-}
-
-
-/* -------------- -------------- -------------- -------------- -------------- -------------- -------------- -------------- */
-/* -------------- -------------- -------------- ----create---- -------------- -------------- -------------- -------------- */
-/* -------------- -------------- -------------- -------------- -------------- -------------- -------------- -------------- */
-
-
-/* -------------- -------------- -------------- -------------- -------------- -------------- -------------- -------------- */
-/* -------------- -------------- -------------- ----ind--- -------------- -------------- -------------- -------------- */
-/* -------------- -------------- -------------- -------------- -------------- -------------- -------------- -------------- */
-#projTitle{
-	font-variant: small-caps;
-	font-size: 2.5em;
-	text-align: center;
-	
-}
-
-#top{
-}
-
-#video{
-	float: left;
-	width: 775px;
-	height:480px;
-}
-
-#bio{
-	float:right;
-	height:480px;
-	width: 240px;
-	overflow-y: auto;
-}
-
-#bio #picture{
-	width:200px;
-	height: 200px;
-}
-
-#projectImgs{
-	min-height: 400px;
-	background: gray;
-}
-
-#projectImgs #rightarr{
-	float: right;
-	height: 400px;
-	width:100px;
-	background: right url('images/arr.svg');
-}
-
-#projectImgs #leftarr{
-	float: left;
-	height: 400px;
-	width:100px;
-	background: right url('images/arr.svg');
-	-webkit-transform: rotate(180deg);
-}
-
-#projectImgs #rightarr:hover{
-	cursor: pointer;
-	background: url('images/arr.svg');
-}
-
-#projectImgs #leftarr:hover{
-	cursor: pointer;
-	-webkit-transform: rotate(180deg);
-	background: url('images/arr.svg');
-}
-
-#projectImgs #image{
-	float: left;
-	max-width: 740px;
-	max-height: 400px;
-	margin: 0 auto;
-}
-
-#projectImgs #image img{
-	max-height: inherit;
-}
-
-#financials{
-	border-bottom: 1px solid rgb(162, 90, 0);
-/* 	width: 75%; */
-	margin: 0 auto;
-	text-align: center;
-	background: rgba(255, 255, 255, 0.32);
-}
-
-#financials table{
-	min-width: 600px;
-}
-
-#preturn{
-	margin-bottom: 10px;
-	text-indent: 50px;
-	margin-left:33%;
-	font-size: 2.5em;
-	width: 45px;
-	height: 50px;
-	background: url('images/savetake.svg');
-}
-
-.daysremaining{
-font-size: 1.5em;
 }
