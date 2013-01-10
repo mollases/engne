@@ -1,11 +1,9 @@
 Engne::Application.routes.draw do
 
-  devise_for :members, :controllers => {:registrations => 'memberships'}
+  devise_for :members, :controllers => {:registrations => 'registrations'}
 
- # get "log_in" => "sessions#new", :as => "log_in"
- # get "log_out" => "sessions#destroy", :as => "log_out"
- # get "sign_up" => "members#new", :as => "sign_up"
   get "index" => "home#index"
+  get "members/:id" => "members#show"
   
   get "categories/new" => "home#index"
   get "/categories/:id/edit(.:format)" => "categories#show"
