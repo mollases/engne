@@ -5,5 +5,9 @@ end
 
 private
 def current_user
-	@current_user ||=Member.find(session[:member_id]) if session[:member_id]
+	if member_signed_in?
+		current_member
+	else
+		nil
+	end
 end
