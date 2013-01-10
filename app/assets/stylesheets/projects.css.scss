@@ -88,10 +88,24 @@
 
 	#projectDesc{
 		width: 80%;
+		background: black;
 
 		.response{
 			width: 90%;
 			font-size: 1.1em;
+		}
+	}
+
+	#new_project{
+		width: 40%;
+
+		.field{
+			.field_name{
+				float: left;
+			}
+			.field_entry{
+				float: right;
+			}
 		}
 	}
 }

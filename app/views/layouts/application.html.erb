@@ -1,41 +1,40 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US"
+<html dir="ltr" lang="en-US">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<title>ENGNE</title>
 	  <%= stylesheet_link_tag    "application", :media => "all" %>
 	  <%= javascript_include_tag "application" %>
 	  <%= csrf_meta_tags %>
 	</head>
 	<body>
-	<div id="page">
-		<div id="header" class="padd">
-			<div class="logo centerized"><%= link_to "EngnE", index_path %></div>
-			<% flash.each do |name, msg| %>
-				<%= content_tag :div, msg, :id => "flash_#{name}"%>
-			<% end %>
-		</div>
-		<div id="profile" class="padd cf">
-
-		<% if member_signed_in? %>
-				<%= link_to "Log out", destroy_member_session_path, :method=>'delete', :class =>'bigBlue' %> or
-				<%= link_to "Edit Profile", edit_member_registration_path, :class =>'bigBlue' %>
-				currently in as <%= current_member.username %>
-		<% else %>		
-			<%= link_to 'Sign up', new_member_registration_path, :class =>'bigBlue' %> or
-			<%= link_to 'Sign in', new_member_session_path, :class =>'bigBlue' %>
-		<% end %>
-		</div>
-		<div id="main" class="padd cf">
-			<%= yield %>
-		</div>
-		<div id="footer" class="padd">
-			<div id="left-footer-bar" class="footer-bar padd"> stuffing </div>
-			<div id="center-right-footer-bar">
-				<div id="center-footer-bar" class="footer-bar padd"> stuffing </div>
-				<div id="right-footer-bar"  class="footer-bar padd"> stuffing </div>
+		<div id="page">
+			<div id="header" class="padd">
+				<div class="logo centerized"><%= link_to "EngnE", index_path %></div>
+				<% flash.each do |name, msg| %>
+					<%= content_tag :div, msg, :id => "flash_#{name}"%>
+				<% end %>
+			</div>
+			<div id="profile" class="padd">
+				<% if member_signed_in? %>
+					<%= link_to "Log out", destroy_member_session_path, :method=>'delete', :class =>'bigBlue' %> or
+					<%= link_to "Edit Profile", edit_member_registration_path, :class =>'bigBlue' %>
+					currently in as <%= current_member.username %>
+				<% else %>		
+					<%= link_to 'Sign up', new_member_registration_path, :class =>'bigBlue' %> or
+					<%= link_to 'Sign in', new_member_session_path, :class =>'bigBlue' %>
+				<% end %>
+			</div>
+			<div id="main" class="padd cf">
+				<%= yield %>
+			</div>
+			<div id="footer" class="padd">
+				<div id="left-footer-bar" class="footer-bar padd"> stuffing </div>
+				<div id="center-right-footer-bar">
+					<div id="center-footer-bar" class="footer-bar padd"> stuffing </div>
+					<div id="right-footer-bar"  class="footer-bar padd"> stuffing </div>
+				</div>
 			</div>
 		</div>
-	</div>
 	</body>
 </html>

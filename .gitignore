@@ -14,8 +14,8 @@
 /log/*.log
 /tmp
 
-# Ignore config files
-/config/intializers/*.rb
+# Ignore all ds_store files
+*. DS_Store
 
 *.sublime-workspace
 

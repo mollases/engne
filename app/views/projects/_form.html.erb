@@ -1,4 +1,4 @@
-<%= form_for(@project) do |f| %>
+<%= form_for(@project, :html => {:class => "centerized"}) do |f| %>
   <% if @project.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
@@ -11,51 +11,57 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.text_field :title, :placeholder => :title.to_s.capitalize %>
-  </div
-
-  <div class="field">
-    <%= f.label :category_id %><br />
-    <%= f.select( :category_id, Category.all.collect {|p| [ p.title, p.id ] }) %>
+  <div class="field cf">
+    <%= f.label :title, :class => "field_name" %>
+    <%= f.text_field :title, :placeholder => :title.to_s.capitalize, :class => "field_entry" %>
   </div>
 
-  <div class="field">
-    <%= f.text_field :estimated_investment_needed, :placeholder => :estimated_investment_needed.to_s.capitalize %>
+  <div class="field cf">
+    <%= f.label :category_id, :class => "field_name" %>
+    <%= f.select( :category_id, Category.all.collect {|p| [ p.title, p.id ] },{},:class => "field_entry") %>
   </div>
 
-  <div class="field">
-    <%= f.text_field :estimated_costs, :placeholder => :estimated_costs.to_s.capitalize %>
+  <div class="field cf">
+    <%= f.label :estimated_investment_needed, :class => "field_name" %>
+    <%= f.text_field :estimated_investment_needed, :placeholder => :estimated_investment_needed.to_s.capitalize, :class => "field_entry" %>
   </div>
 
-  <div class="field">
-    <%= f.label :funds_due_date %><br />
-    <!--<%= f.text_field :funds_due_date %>--> datepicker needed
+  <div class="field cf">
+    <%= f.label :estimated_costs, :class => "field_name" %>
+    <%= f.text_field :estimated_costs, :placeholder => :estimated_costs.to_s.capitalize, :class => "field_entry" %>
   </div>
 
-  <div class="field">
-    <%= f.label :estimated_completion_date %><br />
-    <!--<%= f.text_field :estimated_completion_date %>--> datepicker needed
+  <div class="field cf">
+    <%= f.label :funds_due_date, :class => "field_name" %>
+    <%= f.text_field :funds_due_date, :placeholder => :funds_due_date.to_s.capitalize, :class => "field_entry" %>
   </div>
 
-  <div class="field">
-    <%= f.number_field :number_of_shares, :step => 10, :in => 0...1001, :placeholder => :number_of_shares.to_s.capitalize  %>
+  <div class="field cf">
+    <%= f.label :estimated_completion_date, :class => "field_name" %>
+    <%= f.text_field :estimated_completion_date, :placeholder => :estimated_completion_date.to_s.capitalize, :class => "field_entry" %>
   </div>
 
-  <div class="field">
-    <%= f.text_area :why_description, :placeholder => :why_description.to_s.capitalize  %>
+  <div class="field cf">
+    <%= f.label :number_of_shares, :class => "field_name" %>
+    <%= f.number_field :number_of_shares, :step => 10, :in => 0...1001, :placeholder => :number_of_shares.to_s.capitalize, :class => "field_entry"  %>
   </div>
 
-  <div class="field">
-    <%= f.text_area :how_description, :placeholder => :how_description.to_s.capitalize  %>
+  <div class="field cf">
+    <%= f.label :why_description, :class => "field_name" %>
+    <%= f.text_area :why_description, :placeholder => :why_description.to_s.capitalize, :class => "field_entry"  %>
   </div>
 
-  <div class="field">
-    <%= f.label :make_public %><br />
-    <%= f.check_box :make_public %>
+  <div class="field cf">
+    <%= f.label :how_description, :class => "field_name" %>
+    <%= f.text_area :how_description, :placeholder => :how_description.to_s.capitalize, :class => "field_entry"  %>
   </div>
 
-  <div class="actions">
+  <div class="field cf">
+    <%= f.label :make_public, :class => "field_name" %>
+    <%= f.check_box :make_public, :class => "field_entry" %>
+  </div>
+
+  <div class="actions cf">
     <%= f.submit 'save'%>
   </div>
 <% end %>
