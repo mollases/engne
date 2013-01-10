@@ -12,9 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
+    <%= f.text_field :title, :placeholder => :title.to_s.capitalize %>
+  </div
 
   <div class="field">
     <%= f.label :category_id %><br />
@@ -22,13 +21,11 @@
   </div>
 
   <div class="field">
-    <%= f.label :estimated_investment_needed %><br />
-    <%= f.text_field :estimated_investment_needed %>
+    <%= f.text_field :estimated_investment_needed, :placeholder => :estimated_investment_needed.to_s.capitalize %>
   </div>
 
   <div class="field">
-    <%= f.label :estimated_costs %><br />
-    <%= f.text_field :estimated_costs %>
+    <%= f.text_field :estimated_costs, :placeholder => :estimated_costs.to_s.capitalize %>
   </div>
 
   <div class="field">
@@ -42,18 +39,15 @@
   </div>
 
   <div class="field">
-    <%= f.label :number_of_shares %><br />
-    <%= f.number_field :number_of_shares, :step => 10, :in => 0...1001 %>
+    <%= f.number_field :number_of_shares, :step => 10, :in => 0...1001, :placeholder => :number_of_shares.to_s.capitalize  %>
   </div>
 
   <div class="field">
-    <%= f.label :why_description %><br />
-    <%= f.text_area :why_description %>
+    <%= f.text_area :why_description, :placeholder => :why_description.to_s.capitalize  %>
   </div>
 
   <div class="field">
-    <%= f.label :how_description %><br />
-    <%= f.text_area :how_description %>
+    <%= f.text_area :how_description, :placeholder => :how_description.to_s.capitalize  %>
   </div>
 
   <div class="field">
