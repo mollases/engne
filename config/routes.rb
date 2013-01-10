@@ -1,9 +1,9 @@
 Engne::Application.routes.draw do
 
-  devise_for :members, :controllers => {:registrations => 'registrations'}
+  devise_for :members
 
   get "index" => "home#index"
-  get "members/:id" => "members#show"
+
   
   get "categories/new" => "home#index"
   get "/categories/:id/edit(.:format)" => "categories#show"
@@ -13,5 +13,6 @@ Engne::Application.routes.draw do
   
   resources :categories
   resources :projects
+  resources :members, :only => [:show]
 
   end
