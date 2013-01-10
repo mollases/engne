@@ -15,10 +15,12 @@
 /tmp
 
 # Ignore all ds_store files
-*. DS_Store
+*.DS_Store
 
 *.sublime-workspace
 
 engne.sublime-workspace
 
 config/initializers/secret_token.rb
+
+config/initializers/.DS_Store
