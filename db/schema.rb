@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130110003605) do
+ActiveRecord::Schema.define(:version => 20130112144830) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(:version => 20130110003605) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "username"
+    t.text     "bio"
   end
 
   add_index "members", ["email"], :name => "index_members_on_email", :unique => true
@@ -61,7 +62,7 @@ ActiveRecord::Schema.define(:version => 20130110003605) do
     t.decimal  "current_selling_price"
     t.text     "why_description"
     t.text     "how_description"
-    t.binary   "make_public"
+    t.integer  "make_public"
   end
 
 end
