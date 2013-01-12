@@ -20,5 +20,3 @@ Project.create([
     :how_description => "because of you",
     :make_public => 0
     ])
-#member = Member.create(:email => 'molla.admas@gmail.com', :password => 'password')
-#member.save

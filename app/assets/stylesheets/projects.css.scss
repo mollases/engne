@@ -22,7 +22,6 @@
 			overflow-y: auto;
 
 			.picture{
-				background: black;
 				width:200px;
 				height: 200px;
 			}
@@ -31,7 +30,8 @@
 
 	#projectImgs{
 		min-height: 400px;
-		background: gray;
+		border-top: 2px solid rgb(162, 90, 0);
+		border-bottom: 2px solid rgb(162, 90, 0);
 
 		#rightarr{
 			float: right;
@@ -88,24 +88,10 @@
 
 	#projectDesc{
 		width: 80%;
-		background: black;
 
 		.response{
 			width: 90%;
 			font-size: 1.1em;
-		}
-	}
-
-	#new_project{
-		width: 40%;
-
-		.field{
-			.field_name{
-				float: left;
-			}
-			.field_entry{
-				float: right;
-			}
 		}
 	}
 }

@@ -1,0 +1,12 @@
+form{
+	width: 40%;
+
+	.field{
+		label{
+			float: left;
+		}
+		input,textarea{
+			float: right;
+		}
+	}
+}

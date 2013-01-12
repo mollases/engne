@@ -8,6 +8,6 @@ class AddSpecifiedColumnsToProjects < ActiveRecord::Migration
     add_column :projects, :current_selling_price, :decimal
     add_column :projects, :why_description, :text
     add_column :projects, :how_description, :text
-    add_column :projects, :make_public, :binary
+    add_column :projects, :make_public, :integer
   end
 end

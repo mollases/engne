@@ -13,6 +13,6 @@ Engne::Application.routes.draw do
   
   resources :categories
   resources :projects
-  resources :members, :only => [:show]
+  resources :members, :only => [:show], :as => "show_member"
 
   end
