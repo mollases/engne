@@ -19,7 +19,7 @@
 				<% if member_signed_in? %>
 					<%= link_to "Log out", destroy_member_session_path, :method=>'delete', :class =>'bigBlue' %> or
 					<%= link_to "Edit Profile", edit_member_registration_path, :class =>'bigBlue' %>
-					currently in as <%#= link_to current_member.username, show_member_path, :class => 'bigBlue' %>
+					currently in as <%= link_to current_member.username, member_path(current_member), :class => 'bigBlue' %>
 				<% else %>		
 					<%= link_to 'Sign up', new_member_registration_path, :class =>'bigBlue' %> or
 					<%= link_to 'Sign in', new_member_session_path, :class =>'bigBlue' %>

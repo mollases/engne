@@ -3,6 +3,8 @@ class ApplicationController < ActionController::Base
  helper_method :current_user
 end
 
+
+#what is this here for?
 private
 def current_user
 	if member_signed_in?
