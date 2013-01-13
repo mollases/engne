@@ -1,4 +1,19 @@
-<%= @member.attributes %>
 <%= image_tag @member.avatar.url %>
-<%= image_tag @member.avatar.url(:medium) %>
 <%= image_tag @member.avatar.url(:thumb) %>
+
+<p id="notice"><%= notice %></p>
+
+<div id="projTitle" class="centerized"></div>
+<div id="top" class="cf padd">
+	<div id="main_content">
+		<ul>
+			<% @projects.each do |project| %>
+				<li><%= project.title %></li>
+			<% end %>
+		<ul>
+	</div>
+	<%= render :partial => "shared/member_blurb" %>
+</div>
+<div id="details" class="padd centerized">
+	Member since on:  <%= @member.created_at.strftime("%A %B #{@member.created_at.day.ordinalize}, %Y") %> 
+</div>

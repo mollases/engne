@@ -2,15 +2,8 @@
 
 <div id="projTitle" class="centerized"><%= @project.title %> - <%= Category.find(@project.category_id).title %></div>
 <div id="top" class="cf padd">
-	<div id="main_video" class="blue"></div>
-	<div id="bio">
-		<div class="picture blue"><a href="#"><img></img></a></div>
-		<div id="name" class="padd"><%= Member.find(@project.member_id).username %></div>
-		<div><a href="#">mollases.com</a></div>
-		<div><a href="#">@mollases_</a></div>
-		<div><a href="#">facebook page</a></div>
-		<div><p>Software Engineering is my day job. My actual interest in art developed from pure competition in school against my classmates. Since those early days I have had numerous experiences in the arts. My poetry and some of my pictures have been featured in local newspapers and magazines.</p><p>More recently, I have stopped giving my name exposure in the art world. I tend to do commissioned works or private works now.</p></div>
-	</div>
+	<div id="main_content" class="blue height_req"></div>
+	<%= render :partial => "shared/member_blurb" %>
 </div>
 <div id="projectImgs" >
 	<div id="leftarr" class="centerized"></div>
@@ -19,7 +12,7 @@
 		<div id="rightarr" class="centerized"></div>
 	</div>
 </div>
-<div id="financials" class="padd centerized">
+<div id="details" class="padd centerized">
 	<table class="padd centerized">
 		<tr>
 			<td><a href="#"><div id="woalerts" class="bigBlue">Wait on alerts</div></a></td>

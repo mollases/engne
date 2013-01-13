@@ -10,10 +10,13 @@
 	}
 
 	#top{
-		#main_video{
+		#main_content{
 			float: left;
 			width: 775px;
-			height:480px;
+
+			.height_req{
+				height:480px;
+			}
 		}
 		#bio{
 			float:right;
@@ -71,7 +74,7 @@
 		}
 	}
 
-	#financials{
+	#details{
 		border-bottom: 1px solid rgb(162, 90, 0);
 		margin: 0 auto;
 		text-align: center;
