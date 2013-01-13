@@ -1,5 +1,9 @@
 <div id="bio">
-	<div class="picture blue"><%= image_tag @member.avatar.url(:medium) %></div>
+	<div class="picture blue">
+		<% if @member.avatar? %>
+			<%= image_tag @member.avatar.url(:medium) %> 
+		<% end %>
+	</div>
 	<div id="name" class="padd"><%= @member.username %></div>
 	<div><a href="#">mollases.com</a></div>
 	<div><a href="#">@mollases_</a></div>

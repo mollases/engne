@@ -2,99 +2,97 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#main{
-	#projTitle{
-	font-variant: small-caps;
-	font-size: 2.5em;
-	text-align: center;
-	}
+#projTitle{
+font-variant: small-caps;
+font-size: 2.5em;
+text-align: center;
+}
 
-	#top{
-		#main_content{
-			float: left;
-			width: 775px;
+#top{
+	#main_content{
+		float: left;
+		width: 775px;
 
-			.height_req{
-				height:480px;
-			}
-		}
-		#bio{
-			float:right;
+		.height_req{
 			height:480px;
-			width: 240px;
-			overflow-y: auto;
+		}
+	}
+	#bio{
+		float:right;
+		height:480px;
+		width: 240px;
+		overflow-y: auto;
 
-			.picture{
-				width:200px;
-				height: 200px;
-			}
+		.picture{
+			width:200px;
+			height: 200px;
+		}
+	}
+}
+
+#projectImgs{
+	min-height: 400px;
+	border-top: 2px solid rgb(162, 90, 0);
+	border-bottom: 2px solid rgb(162, 90, 0);
+
+	#rightarr{
+		float: right;
+		height: 400px;
+		width:100px;
+		background: right url('arr.svg');
+
+		&:hover{
+			cursor: pointer;
+			background: url('arr.svg');
 		}
 	}
 
-	#projectImgs{
-		min-height: 400px;
-		border-top: 2px solid rgb(162, 90, 0);
-		border-bottom: 2px solid rgb(162, 90, 0);
+  #leftarr{
+		float: left;
+		height: 400px;
+		width:100px;
+		background: right url('arr.svg');
+		-webkit-transform: rotate(180deg);
 
-		#rightarr{
-			float: right;
-			height: 400px;
-			width:100px;
-			background: right url('arr.svg');
-
-			&:hover{
-				cursor: pointer;
-				background: url('arr.svg');
-			}
-		}
-
-	  #leftarr{
-			float: left;
-			height: 400px;
-			width:100px;
-			background: right url('arr.svg');
+		&:hover{
+			cursor: pointer;
 			-webkit-transform: rotate(180deg);
-
-			&:hover{
-				cursor: pointer;
-				-webkit-transform: rotate(180deg);
-				background: url('arr.svg');
-			}
-		}
-
-		#image_reel{
-			float: left;
-			max-width: 740px;
-			max-height: 400px;
-			margin: 0 auto;
-
-			img{
-			max-height: inherit;
-			}
+			background: url('arr.svg');
 		}
 	}
 
-	#details{
-		border-bottom: 1px solid rgb(162, 90, 0);
+	#image_reel{
+		float: left;
+		max-width: 740px;
+		max-height: 400px;
 		margin: 0 auto;
-		text-align: center;
-		background: rgba(255, 255, 255, 0.32);
-		
-		table{
-			min-width: 600px;
 
-			.daysremaining{
-			font-size: 1.2em;
-			}
+		img{
+		max-height: inherit;
 		}
 	}
+}
 
-	#projectDesc{
-		width: 80%;
+#details{
+	border-bottom: 1px solid rgb(162, 90, 0);
+	margin: 0 auto;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.32);
+	
+	table{
+		min-width: 600px;
 
-		.response{
-			width: 90%;
-			font-size: 1.1em;
+		.daysremaining{
+		font-size: 1.2em;
 		}
+	}
+}
+
+#projectDesc{
+	width: 80%;
+
+	.response{
+		width: 90%;
+		font-size: 1.1em;
 	}
 }
