@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(:version => 20130112144830) do
     t.decimal  "current_selling_price"
     t.text     "why_description"
     t.text     "how_description"
-    t.integer  "make_public"
+    t.integer  "project_status"
   end
 
 end

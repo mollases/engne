@@ -18,5 +18,4 @@ Project.create([
     :number_of_shares=> 10,
     :why_description => "because I can",
     :how_description => "because of you",
-    :make_public => 0
     ])

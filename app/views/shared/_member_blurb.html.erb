@@ -1,4 +1,3 @@
-<div id="bio">
 	<div class="picture blue">
 		<% if @member.avatar? %>
 			<%= image_tag @member.avatar.url(:medium) %> 
@@ -9,4 +8,3 @@
 	<div><a href="#">@mollases_</a></div>
 	<div><a href="#">facebook page</a></div>
 	<div><% if @member.bio %> <%= @member.bio %> <% end %></div>
-</div>
