@@ -26,3 +26,5 @@ config/initializers/secret_token.rb
 config/initializers/.DS_Store
 
 engne.sublime-workspace
+
+app/views/.DS_Store

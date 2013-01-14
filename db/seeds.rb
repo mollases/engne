@@ -17,5 +17,5 @@ Project.create([
     :estimated_costs             => 75.00,
     :number_of_shares=> 10,
     :why_description => "because I can",
-    :how_description => "because of you",
+    :how_description => "because of you"
     ])
