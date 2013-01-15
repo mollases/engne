@@ -29,7 +29,15 @@ engne.sublime-workspace
 
 app/views/.DS_Store
 
-/app/views/transact/*
-/app/models/transact.rb
-/app/controllers/transact_controller.rb
-/app/helpers/transact_helper.rb
+app/views/transact
+
+app/controllers/transact_controller.rb
+app/helpers/transact_helper.rb
+
+app/models/transact.rb
+
+app/views/transact/buy.html.erb
+
+app/views/transact/invest.html.erb
+
+app/views/transact/sell.html.erb
