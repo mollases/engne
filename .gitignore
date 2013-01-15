@@ -30,3 +30,9 @@ engne.sublime-workspace
 app/views/.DS_Store
 
 app/views/transact/*
+
+app/models/transact.rb
+
+app/helpers/transact_helper.rb
+
+app/controllers/transact_controller.rb
