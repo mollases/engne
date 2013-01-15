@@ -28,3 +28,5 @@ config/initializers/.DS_Store
 engne.sublime-workspace
 
 app/views/.DS_Store
+
+app/views/transact/*
