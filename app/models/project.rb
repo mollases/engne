@@ -15,12 +15,16 @@ class Project < ActiveRecord::Base
   # open for sale				= project has been made, engne can sell product
   # sold								= project has been sold
 
-   @@Project_states = { 
-   	:in_progress => {:title => "in progress", :value => 0},
-   	:under_acceptance => {:title => "under acceptance", :value => 10},
-   	:private_investors => {:title => "private investors", :value => 20},
-   	:public_investors => {:title => "public investors", :value => 30},
-   	:under_construction => {:title => "under construction", :value => 40},
-   	:open_for_sale => {:title => "open for sale", :value => 50},
-   	:sold => {:title => "sold", :value => 60}}
+   @@Project_status = { 
+   	:in_progress => 0,
+   	:under_acceptance =>  10,
+   	:private_investors =>  20,
+   	:public_investors => 30,
+   	:under_construction => 40,
+   	:open_for_sale => 50,
+   	:sold => 60}
+
+  def self.PROJECT_STATUS
+    @@Project_status
+  end
 end
