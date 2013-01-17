@@ -1,25 +1,27 @@
-<%#= projects.count %>
 <ul class="sidelisting">
 		<% g = "tall"
 		count = 1
-		 %>
-	<% 3.times do %>
+		3.times do %>
 	<ul class="sub">
 		<% 2.times do %>
 		<li class="<%= g %>">
-		
-			<div class="blank"></div>	
-			<div class= "listing_detail">
-				<div class="title">hi</div>	
-				<div class="author">me</div>
-				<% if g == "tall" %>
-					<div class="desc">desc</div>
-				<% end %>
-			</div>
+			<% if !(count <= projects.length) %>
+				<div class="blank"></div>	
+			<% else %>
+				<div class="taken"></div>	
+				<div class= "listing_detail">
+					<div class="title"><%= link_to projects[count-1].title, projects[count-1] %></div>
+					<div class="date">stuff</div>
+					<% if g == "tall" %>
+						<div class="desc"><%= projects[count-1].why_description %></div>
+					<% end %>
+				</div>
+			<% end %>
 		</li>
 		<% count += 1
-		   g == "tall" ? (g = "small" ) : ( g = "tall" ) if count % 2 == 0 %>
-		<% end %>
+			# every other run, switch from class='tall' to class='small'
+		  g == "tall" ? (g = "small" ) : ( g = "tall" ) if count % 2 == 0 
+		end %>
 	</ul>
 	<% end %>
 </ul>
