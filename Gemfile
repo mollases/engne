@@ -9,8 +9,7 @@ gem 'sqlite3'
 gem 'devise'
 gem 'zeus'
 
-#Installing paperclip for attachments 1/9/13 HH
-gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+
 
 gem "bcrypt-ruby", :require => "bcrypt"
 # Gems used only for assets and not required
