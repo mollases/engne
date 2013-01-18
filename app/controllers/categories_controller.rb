@@ -14,6 +14,7 @@ class CategoriesController < ApplicationController
   # GET /categories/1.json
   def show
     @category = Category.find(params[:id])
+    @projects_cat = Project.where(:project_status => Project.PROJECT_STATUS[:public_investors], :category_id => params[:id])
 
     respond_to do |format|
       format.html # show.html.erb

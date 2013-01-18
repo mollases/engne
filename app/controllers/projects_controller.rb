@@ -16,6 +16,7 @@ class ProjectsController < ApplicationController
   # GET /projects/1.json
   def show
     @project = Project.find(params[:id])
+    @category = Category.find(@project.category_id).title
     @member = Member.find(@project.member_id)
 
     respond_to do |format|

@@ -2,7 +2,7 @@
 <div class="gallery">
 	<%= render :partial => "shared/listings", :locals => {:projects => @buyable} %>
 	<div class="selector">
-		<div><%= link_to 'Create a new Project?', new_project_path, :class => 'bigBlue_selector' %></div>
+		<%= link_to (new_project_path) do %><div class="bigBlue">Create a new Project?</div> <% end %>
 		<div class="categories padd">Categories:
 			<ul class="catlist padd">
 				<% @categories.each do |category| %>
@@ -16,7 +16,7 @@
 <div class="gallery">
 	<%= render :partial => "shared/listings", :locals => {:projects => @investable} %>
 	<div class="selector">
-		<div><%= link_to 'Invest?', new_project_path, :class => 'bigBlue_selector' %></div>
+		<%= link_to (new_project_path) do %><div class="bigBlue">Invest?</div> <% end %>
 		<div class="categories padd">Categories:
 			<ul class="catlist padd">
 				<% @categories.each do |category| %>

@@ -4,7 +4,6 @@
   <b>Title:</b>
   <%= @category.title %>
 </p>
-<p>
-  <b>Description:</b>
-  <%= @category.description %>
-</p>
+<div class="gallery">
+	<%= render :partial => "shared/listings", :locals => {:projects => @projects_cat} %>
+</div>

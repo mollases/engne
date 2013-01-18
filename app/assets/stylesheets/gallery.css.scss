@@ -49,11 +49,11 @@
 			}
 
 			li.small{
-				height: 350px;
+				height: 325px;
 			}
 
 			li.tall{
-				height: 450px;
+				height: 400px;
 			}
 		}
 	}
@@ -67,18 +67,6 @@
 				padding-bottom:20px;
 				margin: 5px;
 				min-width: 170px;
-		
-			a.bigBlue_selector {
-				padding:15px;
-				background: #5BA7E4;
-				margin-bottom: 30px;
-				text-align: center;
-				color: white;
-
-				&:hover{
-					background:#E2A915;
-				}
-			}
 		}
 	}
 }
