@@ -1,6 +1,4 @@
-<p id="notice"><%= notice %></p>
-
-<div id="projTitle" class="centerized"><%= @project.title %> - <%= @category %></div>
+<div id="projTitle" class="centerized"><%= @project.title %> - <%= link_to @category.title,@category %></div>
 <div id="top" class="cf padd">
 	<div id="main_content" class="blue height_req"></div>
 	<div id="bio">
@@ -17,33 +15,20 @@
 <div id="details" class="padd centerized">
 	<table class="padd centerized">
 		<tr>
-			<td><a href="#"><div id="woalerts" class="bigBlue">Wait on alerts</div></a></td>
-			<td><%= link_to (invest_project_path) do %><div id="invest" class="bigBlue">Invest</div> <% end %></td>
+			<td><div class="bigBlue"><%= @project.number_of_shares %> open shares</div></td>
+			<td><%= link_to (invest_project_path(@project)) do %><div id="invest" class="bigBlue">Invest</div> <% end %></td>
+		</tr>
+		<tr>
+			<td><div class="bigBlue">
+					raised <%= number_to_currency 20 %> of <%= number_to_currency @project.estimated_investment_needed %>
+			</td></div>
 			<td><%= link_to (donate_project_path) do %><div id="donate" class="bigBlue">Donate</div> <% end %></td>
 		</tr>
 		<tr>
-			<td></td>
-			<td>
-				<div class="bigBlue">
-					raised <%= number_to_currency 20 %> of <%= number_to_currency @project.estimated_investment_needed %>
-				</div>
-			</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="#">
-					<div class="daysremaining bigBlue"> <%= @project.funds_due_date.strftime("%A %B #{@project.funds_due_date.day.ordinalize}, %Y") %> 
-					</div>
-				</a>
-			</td>
-			<td><div class="bigBlue"><%= @project.number_of_shares %> open shares</div></td>
-			<td>
-				<a href="#">
-					<div class="daysremaining bigBlue"> <%= @project.estimated_completion_date.strftime("%A %B #{@project.funds_due_date.day.ordinalize}, %Y") %> 
-					</div>
-				</a>
-			</td>
+			<td><div class="bigBlue">
+						<%= @project.funds_due_date.strftime("%a %B #{@project.funds_due_date.day.ordinalize}, %Y") %> 
+			</td></div>
+			<td><a href="#"><div id="woalerts" class="bigBlue">Wait on alerts</div></a></td>
 		</tr>
 	</table>
 </div>

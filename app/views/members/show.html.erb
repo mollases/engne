@@ -10,10 +10,10 @@
 				<li><%= link_to project.title, project %></li>
 			<% end %>
 		<ul>
+	<%= link_to (edit_member_registration_path) do %><div class="bigBlue">Edit your profile</div> <% end %>
 	</div>
 	<div id="bio">
 	<%= render :partial => "shared/member_blurb" %>
-	<%= link_to "Edit your profile", edit_member_registration_path %>
 	</div>
 </div>
 <div id="details" class="padd centerized">

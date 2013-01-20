@@ -16,7 +16,7 @@ class ProjectsController < ApplicationController
   # GET /projects/1.json
   def show
     @project = Project.find(params[:id])
-    @category = Category.find(@project.category_id).title
+    @category = Category.find(@project.category_id)
     @member = Member.find(@project.member_id)
 
     respond_to do |format|
@@ -39,6 +39,7 @@ class ProjectsController < ApplicationController
   # GET /projects/1/edit
   def edit
     @project = Project.find(params[:id])
+    redirect_to project_path if @project.member_id != current_member.id
   end
 
   # POST /projects

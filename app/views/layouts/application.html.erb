@@ -17,8 +17,8 @@
 					Currently in as <%= link_to current_member.username, member_path(current_member) %>.
 					<%= link_to "Log out", destroy_member_session_path, :method=>'delete' %>?
 				<% else %>		
-					<%= link_to 'Sign up', new_member_registration_path, :class =>'bigBlue' %> or
-					<%= link_to 'Sign in', new_member_session_path, :class =>'bigBlue' %>
+					<%= link_to (new_member_registration_path) do %><span class="bigBlue">Sign up</span> <% end %> or
+					<%= link_to (new_member_session_path) do %><span class="bigBlue">Sign in</span> <% end %>
 				<% end %>
 			</div>
 			<div id="main" class="padd cf">
