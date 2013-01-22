@@ -7,8 +7,11 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Category.create([{title: 'Jewerly'},{title: 'Ceramic Work'},{title: 'Metal Working'},{title: 'Painting'}])
+
+status = 0;
+7.times do
 Project.create([
-    :title       => "The Cube", 
+    :title       => "The Cube#{status}", 
     :member_id   => 1, 
     :category_id => 1, 
     :funds_due_date               => Date.new(2013,1,20),
@@ -17,5 +20,8 @@ Project.create([
     :estimated_costs             => 75.00,
     :number_of_shares=> 10,
     :why_description => "because I can",
-    :how_description => "because of you"
+    :how_description => "because of you",
+    :project_status => status
     ])
+status += 10;
+end
