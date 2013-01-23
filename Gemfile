@@ -8,7 +8,7 @@ gem 'rails', '3.2.10'
 gem 'sqlite3'
 gem 'devise'
 gem 'zeus'
-
+gem 'activemerchant'
 
 
 gem "bcrypt-ruby", :require => "bcrypt"

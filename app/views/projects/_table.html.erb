@@ -1,20 +1,19 @@
-<div id="details" class="padd centerized"><%= @project.project_status %>
+<div id="details" class="padd centerized">
 	<table class="padd centerized">
-   	<% case @project.project_status 
-   	when @@Project_status[:in_progress] .. @@Project_status[:under_acceptance] %>
+<% case @project.project_status 
+when Project.PROJECT_STATUS[:in_progress] .. Project.PROJECT_STATUS[:under_acceptance] %>
 		<tr>
 			<td> this project is still in the works <td>
 		</tr><tr>
 			<td><a href="#"><div id="woalerts" class="bigBlue">Wait on alerts</div></a></td>
 		</tr>
-		<% when @@Project_status[:private_investors] .. @@Project_status[:public_investors]%>
-   	<%# private investors or public investors %>
-   		<%# if member is in list or public investors%>
+<% when Project.PROJECT_STATUS[:private_investors] .. Project.PROJECT_STATUS[:public_investors]
+	if Project.PROJECT_STATUS[:public_investors] == @project.project_status # or member is accepted %>
 		<tr>
 			<td><div class="bigBlue"><%= @project.number_of_shares %> open shares</div></td>
 			<td><%= link_to (invest_project_path(@project)) do %><div class="bigBlue">Invest</div> <% end %></td>
 		</tr>
-			<%# end if (and public investors) %>
+	<% end %>
 		<tr>
 			<td><div class="bigBlue">
 					raised <%= number_to_currency 20 %> of <%= number_to_currency @project.estimated_investment_needed %>
@@ -27,8 +26,7 @@
 			</div></td>
 			<td><a href="#"><div id="woalerts" class="bigBlue">Wait on alerts</div></a></td>
 		</tr>
-		<%# end private investors or public investors%>
-		<% when @@Project_status[:under_construction] .. @@Project_status[:open_for_sale]%>
+<% when Project.PROJECT_STATUS[:under_construction] .. Project.PROJECT_STATUS[:open_for_sale]%>
 		<%# under construction or open for sale%>
 		<tr>
 			<td>place bid </td>
@@ -38,16 +36,17 @@
 			<td>current bid:</td>
 			<td> $10 </td>
 		</tr>
-		<%# if under construction %>
+	<% if Project.PROJECT_STATUS[:under_construction] == @project.project_status %>
 		<tr>
 			<td> estimated completion date:</td>
 			<td> 
 				<%= @project.estimated_completion_date.strftime("%a %B #{@project.estimated_completion_date.day.ordinalize}, %Y") %> 
 			</td>
 		</tr>
+	<% end %>
 		<%# if open for sale %>
 		<%# end under construction and open for sale%>
-		<% when @@Project_status[:sold] %>
+<% when Project.PROJECT_STATUS[:sold] %>
 <% end %>
 	</table>
 </div>
