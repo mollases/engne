@@ -10,9 +10,11 @@
 				<li><%= link_to project.title, project %></li>
 			<% end %>
 		<ul>
-	<%= link_to (edit_member_registration_path) do %><div class="bigBlue">Edit your profile</div> <% end %>
 	</div>
 	<div id="bio">
+	<% if current_member.id == @member.id %>
+		<%= link_to "Edit your profile", edit_member_registration_path  %>
+	<% end %>
 	<%= render :partial => "shared/member_blurb" %>
 	</div>
 </div>

@@ -8,6 +8,7 @@
 			<% if !(count <= projects.length) %>
 				<div class="blank"></div>	
 			<% else %>
+			<%= link_to projects[count-1] do %>
 				<div class="taken"></div>	
 				<div class= "listing_detail">
 					<div class="title"><%= link_to projects[count-1].title, projects[count-1] %></div>
@@ -16,6 +17,7 @@
 						<div class="desc"><%= projects[count-1].why_description %></div>
 					<% end %>
 				</div>
+				<% end %>
 			<% end %>
 		</li>
 		<% count += 1
@@ -23,5 +25,5 @@
 		  g == "tall" ? (g = "small" ) : ( g = "tall" ) if count % 2 == 0 
 		end %>
 	</ul>
-	<% end %>
+	<% end %></td>
 </ul>

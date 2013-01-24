@@ -1,8 +1,25 @@
 	<div class="picture blue">
 		
 	</div>
-	<div id="name" class="padd"><%= @member.username %></div>
-	<div><a href="#">personal website</a></div>
-	<div><a href="#">twiiter handle</a></div>
-	<div><a href="#">facebook page</a></div>
+	<div id="name" class="padd">
+			<%= link_to @member.username, @member %></div>
+	<div> 
+		<% if @member.personal_site %>
+			<%= link_to @member.personal_site, 
+			@member.personal_site.to_s, 
+			:target => '_blank' %>
+		<% end %>
+	</div>
+	<div>
+		<% if @member.site2 %>
+			<%= link_to @member.site2, 
+			@member.site2.to_s, 
+			:target => '_blank' %>
+		<% end %></div>
+	<div>
+		<% if @member.site3 %>
+			<%= link_to @member.site3, 
+			@member.site3.to_s, 
+			:target => '_blank' %>
+		<% end %></div>
 	<div><% if @member.bio %> <%= @member.bio %> <% end %></div>

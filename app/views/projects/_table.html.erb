@@ -5,7 +5,7 @@ when Project.PROJECT_STATUS[:in_progress] .. Project.PROJECT_STATUS[:under_accep
 		<tr>
 			<td> this project is still in the works <td>
 		</tr><tr>
-			<td><a href="#"><div id="woalerts" class="bigBlue">Wait on alerts</div></a></td>
+			<td><a href="#"><div class="bigBlue">Wait on alerts</div></a></td>
 		</tr>
 <% when Project.PROJECT_STATUS[:private_investors] .. Project.PROJECT_STATUS[:public_investors]
 	if Project.PROJECT_STATUS[:public_investors] == @project.project_status # or member is accepted %>
@@ -28,20 +28,20 @@ when Project.PROJECT_STATUS[:in_progress] .. Project.PROJECT_STATUS[:under_accep
 		</tr>
 <% when Project.PROJECT_STATUS[:under_construction] .. Project.PROJECT_STATUS[:open_for_sale]%>
 		<%# under construction or open for sale%>
-		<tr>
-			<td>place bid </td>
-			<td><a href="#"><div id="woalerts" class="bigBlue">Wait on alerts</div></a></td>
-		</tr>
-		<tr>
-			<td>current bid:</td>
-			<td> $10 </td>
-		</tr>
 	<% if Project.PROJECT_STATUS[:under_construction] == @project.project_status %>
 		<tr>
 			<td> estimated completion date:</td>
 			<td> 
 				<%= @project.estimated_completion_date.strftime("%a %B #{@project.estimated_completion_date.day.ordinalize}, %Y") %> 
 			</td>
+		</tr>
+		<tr>
+			<td>current bid:</td>
+			<td> $10 </td>
+		</tr>
+		<tr>
+			<td><a href="#"><div class="bigBlue">place bid </div></a></td>
+			<td><a href="#"><div class="bigBlue">Wait on alerts</div></a></td>
 		</tr>
 	<% end %>
 		<%# if open for sale %>

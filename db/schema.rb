@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130114001132) do
+ActiveRecord::Schema.define(:version => 20130124025757) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -45,6 +45,9 @@ ActiveRecord::Schema.define(:version => 20130114001132) do
     t.text     "bio"
     t.integer  "committed_funds",        :default => 0
     t.integer  "available_funds",        :default => 0
+    t.string   "personal_site"
+    t.string   "site2"
+    t.string   "site3"
   end
 
   add_index "members", ["email"], :name => "index_members_on_email", :unique => true
