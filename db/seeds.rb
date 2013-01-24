@@ -6,7 +6,13 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+
+
 Category.create([{title: 'Jewerly'},{title: 'Ceramic Work'},{title: 'Metal Working'},{title: 'Painting'}])
+
+Member.create(:email => 'a@a.a', :password => 'foobar', :password_confirmation => 'foobar', :username => 'artist')
+Member.create(:email => 'a@a.b', :password => 'foobar', :password_confirmation => 'foobar', :username => 'investor')
+Member.create(:email => 'a@a.c', :password => 'foobar', :password_confirmation => 'foobar', :username => 'random')
 
 status = 0;
 7.times do
@@ -25,3 +31,4 @@ Project.create([
     ])
 status += 10;
 end
+
