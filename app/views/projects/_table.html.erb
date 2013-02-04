@@ -15,14 +15,13 @@ when Project.PROJECT_STATUS[:in_progress] .. Project.PROJECT_STATUS[:under_accep
 		</tr>
 	<% end %>
 		<tr>
-			<td><div class="bigBlue">
-					raised <%= number_to_currency 20 %> of <%= number_to_currency @project.estimated_investment_needed %>
+			<td><div class="bigBlue">raised <%= number_to_currency @project.funds_gathered %> of <%= number_to_currency @project.estimated_investment_needed %>
 			</div></td>
 			<td><%= link_to (donate_project_path) do %><div class="bigBlue">Donate</div> <% end %></td>
 		</tr>
 		<tr>
 			<td><div class="bigBlue">
-						<%= @project.funds_due_date.strftime("%a %B #{@project.funds_due_date.day.ordinalize}, %Y") %> 
+						<%= @project.funds_due_date.strftime("%A %B #{@project.funds_due_date.day.ordinalize}, %Y") %> 
 			</div></td>
 			<td><a href="#"><div id="woalerts" class="bigBlue">Wait on alerts</div></a></td>
 		</tr>
@@ -32,7 +31,7 @@ when Project.PROJECT_STATUS[:in_progress] .. Project.PROJECT_STATUS[:under_accep
 		<tr>
 			<td> estimated completion date:</td>
 			<td> 
-				<%= @project.estimated_completion_date.strftime("%a %B #{@project.estimated_completion_date.day.ordinalize}, %Y") %> 
+				<%= @project.estimated_completion_date.strftime("%A %B #{@project.estimated_completion_date.day.ordinalize}, %Y") %> 
 			</td>
 		</tr>
 		<tr>
