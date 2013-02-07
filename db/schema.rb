@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130131025227) do
+ActiveRecord::Schema.define(:version => 20130207012404) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(:version => 20130131025227) do
     t.string   "personal_site"
     t.string   "site2"
     t.string   "site3"
+    t.string   "member_photo"
   end
 
   add_index "members", ["email"], :name => "index_members_on_email", :unique => true

@@ -5,7 +5,7 @@ Engne::Application.routes.draw do
   # get "page/terms" => "page#terms", :path => "/terms"
   # get "page/help" => "page#help", :path => "/help"
 
-  devise_for :members
+  devise_for :members, :controllers => { :registrations => "members/registrations" }
 
   get "index" => "home#index"
 
@@ -24,6 +24,7 @@ Engne::Application.routes.draw do
       get 'buy' => 'transact#buy'
     end
   end
+  
   resources :members, :only => [:show], :as => "member"
 
   end
