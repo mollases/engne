@@ -1,20 +1,21 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.10'
+gem 'rails'
 
 # Bundle edge Rails instead:
 #gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-if :development
+group :development, :test do
 	gem 'sqlite3'
 	gem 'zeus'
-else
+end
+group :production do
 	gem 'pg'
 end
 gem 'devise'
 gem 'activemerchant'
 
-
+gem 'heroku'
 gem "bcrypt-ruby", :require => "bcrypt"
 # Gems used only for assets and not required
 # in production environments by default.
