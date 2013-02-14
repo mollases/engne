@@ -41,3 +41,5 @@ app/views/transact/buy.html.erb
 app/views/transact/invest.html.erb
 
 app/views/transact/sell.html.erb
+
+Gemfile.lock
