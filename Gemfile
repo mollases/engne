@@ -15,7 +15,7 @@ end
 gem 'devise'
 gem 'activemerchant'
 
-gem 'heroku'
+#gem 'heroku'
 gem "bcrypt-ruby", :require => "bcrypt"
 # Gems used only for assets and not required
 # in production environments by default.
