@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdc1ecf-c63d-4c1f-86b5-c029d49ecbd8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/engne.iml" afterPath="$PROJECT_DIR$/.idea/engne.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/secret_token.rb" afterPath="$PROJECT_DIR$/config/initializers/secret_token.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="engne.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="acdc1ecf-c63d-4c1f-86b5-c029d49ecbd8" time="1360805394364" ignored="false" />
-    <file path="/secret_token.rb" changelist="acdc1ecf-c63d-4c1f-86b5-c029d49ecbd8" time="1360806579254" ignored="false" />
+    <file path="/Dummy.txt" changelist="acdc1ecf-c63d-4c1f-86b5-c029d49ecbd8" time="1360897278807" ignored="false" />
+    <file path="/secret_token.rb" changelist="acdc1ecf-c63d-4c1f-86b5-c029d49ecbd8" time="1360896315130" ignored="false" />
     <file path="/Gemfile" changelist="acdc1ecf-c63d-4c1f-86b5-c029d49ecbd8" time="1360723877696" ignored="false" />
     <file path="/database.yml" changelist="acdc1ecf-c63d-4c1f-86b5-c029d49ecbd8" time="1360805864646" ignored="false" />
     <file path="/20120712003338_add_financials_to_project.rb" changelist="acdc1ecf-c63d-4c1f-86b5-c029d49ecbd8" time="1360806105872" ignored="false" />
@@ -61,7 +59,9 @@
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="25" column="20" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <marker date="1360805865000" expanded="true" signature="544:664" placeholder="production:" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,7 +69,7 @@
       <file leaf-file-name="secret_token.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/initializers/secret_token.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="170" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
+            <state line="0" column="41" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,7 +143,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -158,8 +158,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -262,6 +260,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -529,11 +529,11 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="2" class="java.lang.String" itemvalue="Rails.Production: engne" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Development: engne" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Production: engne" />
+      <item index="4" class="java.lang.String" itemvalue="Rails.Development: engne" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -576,7 +576,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25782537" sideWeight="0.6702955" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.261944" sideWeight="0.6702955" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970452" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -672,7 +672,9 @@
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="107" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1360805865000" expanded="true" signature="544:664" placeholder="production:" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -700,7 +702,9 @@
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="107" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1360805865000" expanded="true" signature="544:664" placeholder="production:" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -741,21 +745,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="517" selection-end="517" vertical-scroll-proportion="0.5827703">
-          <folding />
-        </state>
+        <state line="23" column="0" selection-start="517" selection-end="517" vertical-scroll-proportion="0.5827703" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="20" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1360805865000" expanded="true" signature="544:664" placeholder="production:" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/secret_token.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="170" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
+        <state line="0" column="41" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
