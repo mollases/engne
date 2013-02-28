@@ -1,0 +1,44 @@
+<div id="projTitle" class="centerized">Donate to <%= link_to @project.title, @project %></div>
+<div id="top" class="cf padd">
+	<div id="main_content" class="blue height_req"></div>
+	<div id="bio">
+		<%= render :partial => "shared/member_blurb" %>
+	</div>
+</div>
+<div id="details" class="padd centerized fullscreen">
+	<table class="padd centerized">
+		<tr>
+			<td><div class="bigBlue"> raised <%= number_to_currency @project.funds_gathered %></div></td>
+			<td><div class="bigBlue">of <%= number_to_currency @project.estimated_investment_needed %></div></td>
+		</tr>
+		<tr class="less_important">
+			<td><div class="bigBlue">funds due date: </div></td>
+			<td>
+				<div class="bigBlue"> <%= @project.funds_due_date.strftime("%A %B #{@project.funds_due_date.day.ordinalize}, %Y") %> 
+				</div>
+			</td>
+		</tr>
+		<tr class="less_important">
+			<td><div class="bigBlue">estimated completion date: </div></td>
+			<td>
+				<div class="bigBlue"> 
+					<%= @project.estimated_completion_date.strftime("%A %B #{@project.funds_due_date.day.ordinalize}, %Y") %>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="ccdata">
+	<form class="cf" autocomplete="off">
+		<div class="cf">
+			<label>Amount
+				<span class="small">how much you want to invest</span>
+			</label>
+			<input 
+				type="text" 
+				pattern="[0-9]*.[0-9][0-9]"/>
+		</div>
+		<%= render :partial => 'cardinfo' %>
+		<button type="submit" class="submit bigBlue">submit</button>
+	</form>
+</div>

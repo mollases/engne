@@ -1,0 +1,468 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"activem",
+				"activemerchant"
+			],
+			[
+				"Project",
+				"Project_status"
+			],
+			[
+				"attr",
+				"attr_accessible"
+			],
+			[
+				"lin",
+				"link_to"
+			],
+			[
+				"und",
+				"under_construction"
+			],
+			[
+				"pub",
+				"public_investors"
+			],
+			[
+				"cou",
+				"count-1"
+			],
+			[
+				"Pr",
+				"PROJECT_STATUS"
+			],
+			[
+				"fin",
+				"find_all_by_project_status"
+			],
+			[
+				"co",
+				"count-1"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"pr",
+				"PROJECT_STATUS"
+			],
+			[
+				"tra",
+				"transact"
+			],
+			[
+				"pro",
+				"Project_states"
+			],
+			[
+				"va",
+				"validates_presence_of"
+			],
+			[
+				"mem",
+				"member"
+			],
+			[
+				"la",
+				"label"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"curre",
+				"current_member"
+			],
+			[
+				"es",
+				"estimated_completion_date"
+			],
+			[
+				"proj",
+				"project_id"
+			],
+			[
+				"in",
+				"integer"
+			],
+			[
+				"ma",
+				"make_public"
+			],
+			[
+				"cate",
+				"category_id"
+			],
+			[
+				"w",
+				"why_description"
+			],
+			[
+				"numb",
+				"number_of_shares"
+			],
+			[
+				"ca",
+				"categories"
+			],
+			[
+				"first",
+				"first_name"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"dea",
+				"death"
+			],
+			[
+				"ta",
+				"takeHit"
+			],
+			[
+				"chara",
+				"characterToAttack"
+			],
+			[
+				"hea",
+				"health"
+			],
+			[
+				"inc",
+				"income"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 903,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Ruby/Ruby.sublime-build",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/mollases/.rvm/gems/ruby-1.9.3-p362/gems/pg-0.14.1/ext/gem_make.out",
+		"/Users/mollases/.rvm/gems/ruby-1.9.3-p362/gems/pg-0.14.1/README-OS_X.rdoc",
+		"/Users/mollases/Downloads/PostgresApp-9-2-2-0/Postgres.app/Contents/MacOS/bin/pg_config",
+		"/usr/bin/pg_config",
+		"/Users/mollases/Desktop/engne/.gitignore",
+		"/Users/mollases/Desktop/engne/config/environments/development.rb",
+		"/Users/mollases/Desktop/engne/public/422.html",
+		"/Users/mollases/Desktop/engne/app/controllers/registrations_controller.rb",
+		"/Users/mollases/Desktop/engne/app/views/members/registrations/new.html.erb",
+		"/Users/mollases/Desktop/engne/app/controllers/members/registrations_controller.rb",
+		"/Users/mollases/Desktop/engne/config/routes.rb",
+		"/Users/mollases/Desktop/engne/app/views/members/registrations/edit.html.erb",
+		"/Users/mollases/Desktop/engne/app/views/projects/_table.html.erb",
+		"/Users/mollases/Desktop/engne/app/controllers/members/registration_controller.rb",
+		"/Users/mollases/Desktop/engne/app/controllers/members_controller.rb",
+		"/Users/mollases/Desktop/engne/app/views/shared/_member_blurb.html.erb",
+		"/Users/mollases/Desktop/engne/app/views/members/show.html.erb",
+		"/Users/mollases/Desktop/engne/app/views/transact/invest.html.erb",
+		"/Users/mollases/Desktop/engne/app/models/member.rb",
+		"/Users/mollases/Desktop/engne/app/views/devise/registrations/edit.html.erb",
+		"/Users/mollases/Desktop/engne/db/migrate/20130207012404_add_member_photo_to_member.rb",
+		"/Users/mollases/Desktop/engne/app/assets/stylesheets/projects.css.scss",
+		"/Users/mollases/Desktop/engne/db/schema.rb",
+		"/Users/mollases/Desktop/engne/db/migrate/20130131025227_add_funds_gathered_to_projects.rb",
+		"/Users/mollases/Desktop/engne/db/migrate/20130131024956_add_funds_gathered_to_members.rb",
+		"/Users/mollases/Desktop/engne/app/models/project.rb",
+		"/Users/mollases/Desktop/engne/Gemfile",
+		"/Users/mollases/Desktop/engne/db/seeds.rb",
+		"/Users/mollases/Desktop/engne/db/development.sqlite3",
+		"/Users/mollases/Desktop/engne/app/views/transact/buy.html.erb",
+		"/Users/mollases/Desktop/engne/app/controllers/home_controller.rb",
+		"/Users/mollases/Desktop/engne/app/views/shared/_listings.html.erb",
+		"/Users/mollases/Desktop/engne/db/migrate/20130124025757_add_site_to_member.rb",
+		"/Users/mollases/Desktop/engne/app/views/projects/_edit_form.html.erb",
+		"/Users/mollases/Desktop/engne/app/views/projects/show.html.erb",
+		"/Users/mollases/Desktop/engne/app/controllers/application_controller.rb",
+		"/Users/mollases/Desktop/engne/app/views/members/deposit.html.erb",
+		"/Users/mollases/Desktop/engne/app/controllers/projects_controller.rb",
+		"/Users/mollases/Desktop/engne/engne.sublime-workspace",
+		"/Users/mollases/Desktop/engne/engne.sublime-project",
+		"/Users/mollases/Desktop/engne/app/views/layouts/application.html.erb",
+		"/Users/mollases/Desktop/engne/app/controllers/transact_controller.rb",
+		"/Users/mollases/Desktop/engne/app/views/projects/invest.html.erd",
+		"/Users/mollases/Desktop/engne/app/views/home/index.html.erb",
+		"/Users/mollases/Desktop/engne/app/assets/stylesheets/gallery.css.scss",
+		"/Users/mollases/Desktop/engne/app/assets/stylesheets/home.css.scss",
+		"/Users/mollases/Desktop/engne/app/controllers/categories_controller.rb",
+		"/Users/mollases/Desktop/engne/app/views/categories/show.html.erb",
+		"/Users/mollases/Desktop/engne/config/database.yml",
+		"/Users/mollases/Desktop/engne/app/views/shared/_gallery.html.erb",
+		"/Users/mollases/Desktop/engne/app/models/transact.rb",
+		"/Users/mollases/Desktop/engne/app/views/transact/donate.html.erb",
+		"/Users/mollases/Desktop/engne/app/views/transact/sell.html.erb",
+		"/Users/mollases/Desktop/engne/app/helpers/transact_helper.rb",
+		"/Users/mollases/Desktop/engne/db/migrate/20130114001132_add_numbers_to_members.rb",
+		"/Users/mollases/Desktop/engne/db/migrate/20130113235856_add_funds_to_members.rb",
+		"/Users/mollases/Desktop/engne/db/migrate/20130108014930_add_specified_columns_to_projects.rb",
+		"/Users/mollases/Desktop/engne/app/assets/stylesheets/form.css.scss",
+		"/Users/mollases/Desktop/engne/app/assets/stylesheets/application.css",
+		"/Users/mollases/Desktop/engne/app/views/projects/_form.html.erb",
+		"/Users/mollases/Desktop/engne/app/assets/stylesheets/bio.css.scss",
+		"/Users/mollases/Desktop/engne/db/migrate/20130105235825_devise_create_members.rb",
+		"/Users/mollases/Desktop/engne/app/controllers/registration_controller.rb",
+		"/Users/mollases/Desktop/engne/app/views/projects/edit.html.erb",
+		"/Users/mollases/Desktop/engne/app/views/devise/registrations/new.html.erb",
+		"/Users/mollases/Desktop/engne/db/migrate/20130112013152_create_project_states.rb",
+		"/Users/mollases/Desktop/engne/app/views/devise/registrations/show.html.erb",
+		"/Users/mollases/Desktop/engne/app/views/projects/new.html.erb",
+		"/Users/mollases/Desktop/engne/config/initializers/secret_token.rb",
+		"/Users/mollases/Desktop/engne/doc/app/images/find.png",
+		"/Users/mollases/Desktop/engne/app/controllers/sessions_controller.rb",
+		"/Users/mollases/Desktop/engne/config/initializers/devise.rb",
+		"/Users/mollases/Desktop/engne/test/fixtures/members.yml",
+		"/Users/mollases/Desktop/engne/config/locales/devise.en.yml",
+		"/Users/mollases/Downloads/engne/selling.php",
+		"/Users/mollases/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/mollases/Desktop/engne/db/migrate/20130109010746_create_investors.rb",
+		"/Users/mollases/Desktop/engne/taskList.md",
+		"/Users/mollases/Dropbox/EngneDocs/Answer me please.txt",
+		"/Users/mollases/Desktop/engne/db/migrate/20130108014400_remove_useless_columns_from_project.rb",
+		"/Users/mollases/Desktop/engne/db/migrate/20120712003338_add_financials_to_project.rb",
+		"/Users/mollases/Desktop/engne/app/views/categories/new.html.erb",
+		"/Users/mollases/Desktop/engne/config/environment.rb",
+		"/Users/mollases/Downloads/engne/css/style.css",
+		"/Users/mollases/Desktop/engne/db/migrate/20130105223932_drop_table_member.rb",
+		"/Users/mollases/Desktop/worldDomination/wd.sublime-project",
+		"/Users/mollases/Desktop/worldDomination/top.php",
+		"/Users/mollases/Desktop/worldDomination/index.html",
+		"/Users/mollases/Desktop/worldDomination/css/style.css",
+		"/Users/mollases/Desktop/worldDomination/index.php",
+		"/Users/mollases/Desktop/worldDomination/character.js",
+		"/Users/mollases/Desktop/engne/app/views/sessions/new.html.erb",
+		"/Users/mollases/Desktop/engne/app/models/category.rb",
+		"/Users/mollases/Downloads/worldDomination/css/style.css",
+		"/Users/mollases/Desktop/World Domination_files/character.js",
+		"/Users/mollases/Desktop/World Domination.html",
+		"/Users/mollases/Desktop/engne/Gemfile.lock",
+		"/Users/mollases/Desktop/we'll see.php",
+		"/Users/mollases/Desktop/engne/engne/app/views/home/index.html.erb",
+		"/Users/mollases/Desktop/engne/app/assets/stylesheets/style.css",
+		"/Users/mollases/Desktop/engne/app/assets/stylesheets/scaffolds.css.scss",
+		"/Users/mollases/Downloads/20120712002500_add_email_to_member.rb",
+		"/Users/mollases/Downloads/20120712003346_add_salt_to_member.rb",
+		"/Users/mollases/Desktop/engne/app/views/categories/edit.html.erb",
+		"/Users/mollases/Desktop/engne/app/views/categories/index.html.erb",
+		"/Users/mollases/Desktop/engne/app/views/categories/_form.html.erb",
+		"/Users/mollases/Desktop/engne/app/views/categories/jewerly.html.erb",
+		"/Users/mollases/Downloads/engne#1/index.php",
+		"/Users/mollases/Desktop/engne/db/migrate/20120702212255_create_categories.rb",
+		"/Users/mollases/Desktop/depot/app/models/cart.rb",
+		"/Users/mollases/Desktop/deopt_rails32/depot_u/Gemfile",
+		"/Users/mollases/Desktop/engne/db/migrate/20120702202600_categories.rb",
+		"/Users/mollases/Desktop/deopt_rails32/depot_u/lib/tasks/db_backup.rake",
+		"/Users/mollases/Desktop/depot/app/models/product.rb",
+		"/Users/mollases/Desktop/depot/config/routes.rb",
+		"/Users/mollases/Downloads/engne#1/basic/header.php",
+		"/Users/mollases/Downloads/engne#1/basic/footer.php",
+		"/Users/mollases/Desktop/goodpeople/app/views/layouts/application.html.erb",
+		"/Users/mollases/Desktop/depot/app/views/layouts/application.html.erb",
+		"/Users/mollases/Desktop/depot/app/models/line_item.rb",
+		"/Users/mollases/Desktop/depot/app/assets/stylesheets/store.css.scss",
+		"/Users/mollases/Desktop/depot/app/views/store/index.html.erb",
+		"/Users/mollases/Desktop/depot/test/functional/line_items_controller_test.rb",
+		"/Users/mollases/Desktop/depot/app/controllers/line_items_controller.rb",
+		"/Users/mollases/Desktop/depot/db/schema.rb",
+		"/Users/mollases/Desktop/depot/db/test.sqlite3",
+		"/Users/mollases/Desktop/goodpeople/Rakefile",
+		"/Users/mollases/Desktop/goodpeople/public/index.html.erb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/mollases/Desktop/engne/app",
+			"",
+			".",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"bigBlue_selector",
+			"class=\"bigBlue\"",
+			"projects",
+			"make_public",
+			":class => \"field_entry\"",
+			"center",
+			"5BA7E4",
+			"e2a",
+			"bigb",
+			"session",
+			"new_session",
+			"url",
+			"@product",
+			"{\n",
+			"➤ .products { ➤ table {\n➤\n➤}\n➤\n➤\n➤\n➤\n➤}\n➤\n➤\n➤\n➤\n➤}\n➤\n➤\n➤\n➤\n➤\n➤\n➤}\n➤\n➤ dt{\n➤\n➤\n➤\n➤}\n➤\n➤ dd{\n➤ margin: 0;\n➤}\n➤}\n➤\n➤\n➤\n➤\n➤\n➤}\n➤\n➤ .list_line_even\n➤ background:\n➤}\n➤\n➤ .list_line_odd {\n➤ background: #f8b0f8;\nborder-collapse: collapse;\ntable tr td {\npadding: 5px; vertical-align: top;\n.list_image { width: 60px; height: 70px;\n.list_description { width: 60%;\ndl{\nmargin: 0;\ncolor: #244; font-weight: bold; font-size: larger;\n.list_actions { font-size: text-align: padding-left:\nx-small;\nright;\n1em;\n{\n#e0f8f8;\n￼Prepared exclusively for krishna halaharvi\nreport erratum • discuss\n➤"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"@poem",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 903,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								602,
+								602
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"sess",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"routes",
+				"engne/config/routes.rb"
+			],
+			[
+				"application",
+				"app/views/layouts/application.html.erb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 307.0,
+	"status_bar_visible": true
+}
