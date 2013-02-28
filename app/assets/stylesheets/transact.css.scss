@@ -1,3 +1,52 @@
 // Place all the styles related to the transact controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.fullscreen{
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background: gray;
+}
+
+.less_important{
+	opacity: 0.80;
+}
+
+#ccdata{
+	width: 600px;
+	margin: 0 auto;
+ 	
+ 	form{
+		margin: 0 auto;
+ 		padding: 40px 20px;
+ 		width: 100%;
+	 	
+	 	label{
+			display:block;
+			font-weight:bold;
+			text-align:right;
+			width:200px;
+			float:left;
+		}
+		.small{
+			display:block;
+			font-size:.75em;
+			font-weight:normal;
+			text-align:right;
+		}
+
+		input{
+			font-size:1.2em;
+			padding:4px 2px;
+			border:solid 1px #aacfe4;
+			width:300px;
+			margin:2px 0 20px 10px;
+		}
+
+		.submit{
+			width: 86%;
+			font-size: 1.2em;
+			font-weight: bold;
+		}
+	}
+}
